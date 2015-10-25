@@ -1,0 +1,39 @@
+.contact{
+    width: 100%;
+    background: $dark;
+    form{
+        h1{
+            text-align: center;
+            line-height: 60px;
+            margin-bottom: 20px;
+            color: $gold;
+        }
+        input, textarea{
+            display: block;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 4px $silver solid;
+            transition: border 0.3s;
+            &:focus{
+                border-bottom: 4px darken($silver, 20%) solid;
+            }
+        }
+        input{
+            height: 60px;
+            &[type="submit"]{
+                background: $gold;
+                color:$light;
+                border-bottom: 3px lighten($gold, 20%) solid;
+            }
+        }
+        textarea{
+            height: 80px;
+            resize: none;
+        }
+    }
+}
