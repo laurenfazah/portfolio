@@ -1,0 +1,10 @@
+header{
+    margin-top: $header-height;
+    background: $silver;
+    padding: $box-padding;
+}
+
+@media all and(min-width: 800px){
+    header{
+    }
+}
