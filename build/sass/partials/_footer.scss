@@ -1,5 +1,11 @@
 footer{
     width: 100%;
-    height: 150px;
     background: $silver;
+    padding: $box-padding;
+    p{
+        color: $dark;
+        text-align: right;
+        font-weight: 700;
+        vertical-align: baseline;
+    }
 }
