@@ -2,6 +2,14 @@
     font-family: Helvetica;
 }
 
-.introduction, .resume, .portfolio, .contact {
+section {
     padding: $box-padding;
+    &.info{
+        width: 100%;
+        border-bottom: 2px $silver solid;
+        h1{
+        }
+        p{
+        }
+    }
 }

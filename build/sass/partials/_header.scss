@@ -1,7 +1,12 @@
 header{
     margin-top: $header-height;
-    background: $silver;
+    background: $dark;
     padding: $box-padding;
+    h1{
+        color: $light;
+        font-size: 18px;
+        text-align: right;
+    }
 }
 
 @media all and(min-width: 800px){
