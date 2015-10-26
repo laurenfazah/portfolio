@@ -1,6 +1,4 @@
-# HHCC App landing page
-
-Personal boilerplate for creating static sites using compass, scss, bourbon, jquery, grunt and html5 goodness.
+# Portfolio
 
 ## let's do work
 1.  only edit build/* assets
