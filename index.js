@@ -7,7 +7,6 @@
 
 // modules
 var static = require( 'node-static' ),
-    port = 3000,
     http = require( 'http' );
 
 // config
@@ -21,4 +20,4 @@ http.createServer( function ( request, response ) {
     request.addListener( 'end', function () {
         file.serve( request, response );
     } ).resume();
-} ).listen( port );
+} ).listen( process.env.PORT || 5000 );
