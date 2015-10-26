@@ -4,7 +4,7 @@
   "description": "boilerplate",
   "main": "/js/main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node html/index.js"
   },
   "repository": {
     "type": "git",
