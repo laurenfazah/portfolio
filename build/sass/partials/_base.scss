@@ -17,8 +17,12 @@ $instagram: #1b3f67;
 $linkedin: #3574af;
 
 $light:#fff;
-$dark: #333;
-$primary: #00B2EA;
+$dark: #231f20;
+$gold: #a08958;
+$silver: #cbc8c7;
+
+$red: #800000;
+$blue: #008080;
 
 /*//////////////////////////////////////
 //  fonts
@@ -30,6 +34,25 @@ h1,h2,h3,h4,h5,h6{
     font-weight:700;
 }
 
+p, li{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1{
+    font-size: 28px;
+    line-height: 36px;
+}
+
+*{
+    &::selection {
+        background: $gold;
+    }
+    &::-moz-selection {
+        background: $gold;
+    }
+}
+
 /*//////////////////////////////////////
 //  extension on skeleton
 //////////////////////////////////////*/
@@ -38,6 +61,8 @@ $width:1200px;
 $max-width:1200px;
 $font-size:10;
 $paragraph-size:1.6;
+$header-height: 60px;
+$box-padding: 20px;
 
 *{
     @include box-sizing(border-box);
@@ -76,7 +101,7 @@ button,input[type="submit"]{
     &:-moz-placeholder { @content; }
     &::-moz-placeholder { @content; }
     &:-ms-input-placeholder { @content; }
-    &::-webkit-input-placeholder { @content; } 
+    &::-webkit-input-placeholder { @content; }
 }
 
 
