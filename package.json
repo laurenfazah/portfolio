@@ -38,7 +38,7 @@
     "grunt-contrib-copy": "*"
   },
   "dependencies": {
-    "domready": "^1.0.8"
+    "domready": "^1.0.8",
     "node-static": "^0.7.7"
   }
 }
