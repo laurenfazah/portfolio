@@ -4,7 +4,7 @@
   "description": "boilerplate",
   "main": "/js/main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./html/index.js"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,6 @@
   "dependencies": {
     "connect": "^2.30.2",
     "domready": "^1.0.8",
-    "node-static": "^0.7.7",
-    "serve-static": "^1.10.0"
+    "node-static": "^0.7.7"
   }
 }

@@ -1,9 +1,24 @@
-// $(function(require) {
-//     var connect = require('connect'),
-//     serveStatic = require('serve-static');
+/**
+ * Static HTTP Server
+ *
+ * Create a static file server instance to serve files
+ * and folder in the './public' folder
+ */
 
-//     var app = connect();
+// modules
+var static = require( 'node-static' ),
+    port = 3000,
+    http = require( 'http' );
 
-//     app.use(serveStatic("./angularjs"));
-//     app.listen(5000);
-// });
+// config
+var file = new static.Server( './html', {
+    cache: 3600,
+    gzip: true
+} );
+
+// serve
+http.createServer( function ( request, response ) {
+    request.addListener( 'end', function () {
+        file.serve( request, response );
+    } ).resume();
+} ).listen( port );
