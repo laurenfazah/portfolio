@@ -1,11 +1,10 @@
 {
   "name": "boilerplate",
-
   "version": "0.0.0",
   "description": "boilerplate",
   "main": "/js/main.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,9 +14,6 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/RobErskine/erskineplate/issues"
-  },
-  "scripts": {
-    "start": "node index.js"
   },
   "homepage": "https://github.com/RobErskine/erskineplate",
   "devDependencies": {
@@ -38,7 +34,9 @@
     "grunt-contrib-copy": "*"
   },
   "dependencies": {
+    "connect": "^2.30.2",
     "domready": "^1.0.8",
-    "node-static": "^0.7.7"
+    "node-static": "^0.7.7",
+    "serve-static": "^1.10.0"
   }
 }

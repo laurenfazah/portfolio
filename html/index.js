@@ -1,7 +1,9 @@
-var static = require('node-static');
-var file = new static.Server();
-require('http').createServer(function(request, response) {
-  request.addListener('end', function() {
-    file.serve(request, response);
-  }).resume();
-}).listen(process.env.PORT || 3000);
+// $(function(require) {
+//     var connect = require('connect'),
+//     serveStatic = require('serve-static');
+
+//     var app = connect();
+
+//     app.use(serveStatic("./angularjs"));
+//     app.listen(5000);
+// });
