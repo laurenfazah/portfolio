@@ -2,14 +2,40 @@
     font-family: Helvetica;
 }
 
-section {
-    padding: $box-padding;
-    &.info{
-        width: 100%;
-        border-bottom: 2px $silver solid;
-        h1{
+main {
+    section {
+        &.info{
+            padding: 0 20px;
+            width: 100%;
+            h1{
+                margin-top: 20px;
+            }
+            p{
+            }
+            &.portfolio{
+                margin-bottom: 50px;
+            }
         }
-        p{
+        &.introduction{
+            .slick-it{
+                // @extend %absolute-middle;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            .slick-slide{
+                    outline: none;
+                    overflow: hidden;
+                }
+                .sliding{
+                    p{
+                        line-height: 60px;
+                        height: 60px;
+                        width: 60%;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                }
+            }
         }
     }
+
 }

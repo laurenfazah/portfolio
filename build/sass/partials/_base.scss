@@ -44,6 +44,15 @@ h1{
     line-height: 36px;
 }
 
+*{
+    &::selection {
+        background: $gold;
+    }
+    &::-moz-selection {
+        background: $gold;
+    }
+}
+
 /*//////////////////////////////////////
 //  extension on skeleton
 //////////////////////////////////////*/

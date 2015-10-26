@@ -3,6 +3,7 @@ header{
     background: $dark;
     padding: $box-padding;
     h1{
+        display: none;
         color: $light;
         font-size: 18px;
         text-align: right;
@@ -11,5 +12,8 @@ header{
 
 @media all and(min-width: 800px){
     header{
+        h1{
+            display: block;
+        }
     }
 }

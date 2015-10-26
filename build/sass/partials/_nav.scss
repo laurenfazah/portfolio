@@ -24,6 +24,11 @@ nav{
         text-align: center;
         &.active{
             display: block;
+            li{
+                &:last-child{
+                    margin-bottom: 20px;
+                }
+            }
         }
         li{
             line-height:40px;
@@ -35,7 +40,7 @@ nav{
             }
             &:last-child{
                 border-bottom: none;
-                margin-bottom: 20px;
+                margin-bottom: 0;
             }
         }
     }
