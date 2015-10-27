@@ -1,5 +1,5 @@
 $(function() {
-    $("div").on("click", function() {
+    $("nav").on("click", function() {
         $("nav ul").toggleClass("active");
     }), $(".slick-it").slick({
         slide: ".sliding",

@@ -4,13 +4,12 @@ nav{
     width: 100%;
     background: $dark;
     color: $light;
+    z-index: 99;
     .burger{
         display: block;
         height: $header-height;
         width: 100%;
-        z-index: 2;
-        object{
-            z-index: -1;
+        img{
             height: 40px;
             width: 40px;
             @extend %absolute-middle;

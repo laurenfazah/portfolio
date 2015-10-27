@@ -1,0 +1,79 @@
+.portfolio{
+    ul{
+        position: relative;
+        margin-bottom: 80px;
+    }
+    li{
+        width:100%;
+        margin-bottom: 15px;
+        display: block;
+        position:relative;
+        border: 1px $gold solid;
+        background-size: 100%;
+        background-repeat:no-repeat;
+        background-position:center;
+        @extend %default-transition;
+        &:before{
+            content:" ";
+            display:block;
+            padding-top:140%;
+        }
+        p{
+            width: 100%;
+            line-height: 80px;
+            padding: 0 20px;
+            background: $silver;
+            color: $light;
+        }
+    }
+    .freelance{
+
+    }
+    .career{
+        li{
+            &.tvnext{
+                background-image: image-url('tvnext-companion.png');
+            }
+            &.brandfeed{
+                background-image: image-url('');
+            }
+            &.training-portal{
+                background-image: image-url('training-dashboard.png');
+            }
+            &.onebostonday{
+                background-image: image-url('');
+            }
+            &.hhcc-app{
+                background-image: image-url('hhcc_app-desktop.png');
+            }
+            &.passion{
+                background-image: image-url('passion-poll_article.png');
+            }
+            &.rfid{
+                background-image: image-url('');
+            }
+        }
+    }
+    .personal{
+        li{
+            &.storymaker{
+                background-image: image-url('storymaker-story.png');
+            }
+            &.selfless{
+                background-image: image-url('selfless.png');
+            }
+        }
+    }
+}
+
+@media all and(min-width:800px){
+    .portfolio{
+        ul{
+            @include outer-container();
+        }
+        li{
+            @include span-columns(6);
+            @include omega(2n);
+        }
+    }
+}

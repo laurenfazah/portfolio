@@ -3,7 +3,7 @@ $(function(){
     /*//////////////////////////////////////
     //  burger open close
     //////////////////////////////////////*/
-    $('div').on('click', function(){
+    $('nav').on('click', function(){
         $('nav ul').toggleClass('active');
     });
 
