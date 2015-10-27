@@ -21,11 +21,11 @@
                     vertical-align: middle;
                     font-weight: 200;
                     color: $gold;
+                    z-index: 1;
                 }
-                object{
-                    height: 30px;
+                img{
                     vertical-align: middle;
-                    width: 50px;
+                    z-index: -1;
                 }
             }
         }
