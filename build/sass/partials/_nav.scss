@@ -11,6 +11,7 @@ nav{
         width: 100%;
         img{
             height: 40px;
+            border: 1px $gold solid;
             width: 40px;
             @extend %absolute-middle;
         }
@@ -41,6 +42,17 @@ nav{
                 border-bottom: none;
                 margin-bottom: 0;
             }
+            &.logo img{
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                vertical-align: middle;
+                border: 1px $gold solid;
+            }
+            a{
+                text-decoration: none;
+                color: $light;
+            }
         }
     }
 }
@@ -52,10 +64,10 @@ nav{
         }
         ul{
             display: block;
-            height: $header-height;
+            padding: 10px 0;
             @include clearfix;
             li{
-                width: 25%;
+                width: 20%;
                 float: left;
                 &:first-child{
                     display: block;
@@ -63,6 +75,9 @@ nav{
                 }
                 &:last-child{
                     border-bottom: 1px $gold solid;
+                }
+                a{
+                    text-align: right;
                 }
             }
         }

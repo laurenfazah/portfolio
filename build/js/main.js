@@ -3,9 +3,11 @@ $(function(){
     /*//////////////////////////////////////
     //  burger open close
     //////////////////////////////////////*/
-    $('nav').on('click', function(){
-        $('nav ul').toggleClass('active');
-    });
+    if($(window).width() < 800){
+        $('nav').on('click', function(){
+            $('nav ul').toggleClass('active');
+        });
+    }
 
     /*//////////////////////////////////////
     //  fun facts carousel
