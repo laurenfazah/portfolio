@@ -1,0 +1,47 @@
+.coming-soon{
+    background: $dark;
+    height: 100vh;
+    position: relative;
+    header{
+        bottom: auto;
+        top: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 0;
+        font-size: 16px;
+        text-align: right;
+        ul{
+            @include clearfix;
+            li{
+                line-height: 60px;
+                float: right;
+                margin-right: 20px;
+                a{
+                    text-decoration: none;
+                    vertical-align: middle;
+                    font-weight: 200;
+                    color: $gold;
+                }
+                object{
+                    height: 30px;
+                    vertical-align: middle;
+                    width: 50px;
+                }
+            }
+        }
+    }
+    h1{
+        color: $gold;
+        @extend %absolute-middle;
+        font-size: 50px;
+    }
+    footer{
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        background: $gold;
+        p{
+            font-weight: 200;
+        }
+    }
+}
