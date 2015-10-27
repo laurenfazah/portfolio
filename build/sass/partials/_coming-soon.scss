@@ -22,12 +22,12 @@
                     font-weight: 200;
                     color: $gold;
                     z-index: 1;
-                    img{
-                        height: 30px;
-                        vertical-align: middle;
-                        width: 50px;
-                        z-index: -1;
-                    }
+                }
+                img{
+                    height: 30px;
+                    width: 50px;
+                    vertical-align: middle;
+                    z-index: -1;
                 }
             }
         }
