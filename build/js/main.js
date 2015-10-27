@@ -13,8 +13,8 @@ $(function(){
     //  fun facts carousel
     //////////////////////////////////////*/
     $('.slick-it').slick({
-        slide: '.sliding',
-        dots: true,
+        slide: '.slick-it li',
+        dots: false,
         arrows: true,
         infinite: true,
         // slidesToShow: 3,

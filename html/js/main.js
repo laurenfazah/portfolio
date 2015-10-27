@@ -1,10 +1,24 @@
-$(function() {
-    $(window).width() < 800 && $("nav").on("click", function() {
-        $("nav ul").toggleClass("active");
-    }), $(".slick-it").slick({
-        slide: ".sliding",
-        dots: !0,
-        arrows: !0,
-        infinite: !0
+$(function(){
+
+    /*//////////////////////////////////////
+    //  burger open close
+    //////////////////////////////////////*/
+    if($(window).width() < 800){
+        $('nav').on('click', function(){
+            $('nav ul').toggleClass('active');
+        });
+    }
+
+    /*//////////////////////////////////////
+    //  fun facts carousel
+    //////////////////////////////////////*/
+    $('.slick-it').slick({
+        slide: '.slick-it li',
+        dots: false,
+        arrows: true,
+        infinite: true,
+        // slidesToShow: 3,
+        // slidesToScroll: 3
     });
+
 });
