@@ -22,14 +22,14 @@
             display: inline-block;
             float: right;
             @include transform(rotate(-90deg));
-            @include transition(all .3s ease-in-out);
+            @extend %default-transition;
             &.face-up{
                 @include transform(rotate(90deg));
             }
         }
         p{
             display: none;
-            @include transition(all .3s ease-in-out);
+            @extend %default-transition;
             &.active{
                 display: block;
             }

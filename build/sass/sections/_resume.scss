@@ -1,0 +1,51 @@
+.resume{
+    ul{
+        position: relative;
+        margin-bottom: 80px;
+    }
+    li{
+        width:100%;
+        margin-bottom: 15px;
+        display: block;
+        position:relative;
+        border: 1px $gold solid;
+        background: lighten($dark,20%);
+        // @include background-image(linear-gradient(darken($dark, 20%), $dark));
+        @extend %default-transition;
+        &:before{
+            content:" ";
+            display:block;
+            padding-top:100%;
+        }
+        .content{
+            @extend %absolute-middle;
+            p{
+                width: 100%;
+                font-size: 28px;
+                line-height: 28px;
+                letter-spacing: -1px;
+                text-align: center;
+                color: $light;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+@media all and(min-width:800px){
+    .resume{
+        ul{
+            @include outer-container();
+        }
+        li{
+            @include span-columns(6);
+            @include omega(2n);
+            .content{
+                p{
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+}

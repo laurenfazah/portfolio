@@ -4,10 +4,11 @@
 @import 'partials/body';
 @import 'partials/nav';
 @import 'partials/header';
-@import 'partials/form';
 @import 'partials/footer';
 
-@import 'partials/intro';
-@import 'partials/portfolio';
+@import 'sections/intro';
+@import 'sections/resume';
+@import 'sections/portfolio';
+@import 'sections/form';
 
-// @import 'partials/coming-soon';
+// @import 'sections/coming-soon';
