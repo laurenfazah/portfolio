@@ -1,7 +1,32 @@
 .introduction{
-    background: $silver;
+    background: lighten($gold, 20%);
     margin-top: -20px;
     h1{
         color: $light;
+        padding-top: 20px;
+    }
+    .who{
+        p{
+            display: none;
+        }
+        p.active{
+            display: block;
+        }
+    }
+    ul.slick-slider{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        li{
+            &.slick-slide.slick-current.slick-active{
+                outline: none;
+                overflow: hidden;
+                p{
+                    width: 60%;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }

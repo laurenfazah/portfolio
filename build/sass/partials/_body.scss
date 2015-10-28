@@ -19,25 +19,6 @@ main {
                 margin-bottom: 50px;
             }
         }
-        &.introduction{
-            .slick-it{
-                padding-top: 50px;
-                padding-bottom: 50px;
-            .slick-slide{
-                    outline: none;
-                    overflow: hidden;
-                }
-                .sliding{
-                    p{
-                        line-height: 60px;
-                        height: 60px;
-                        width: 60%;
-                        text-align: center;
-                        margin: 0 auto;
-                    }
-                }
-            }
-        }
     }
 }
 
