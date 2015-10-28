@@ -10,10 +10,13 @@ $(function(){
     }
 
     /*//////////////////////////////////////
-    //  intro info toggle
+    //  intro section
     //////////////////////////////////////*/
     $('.who').on('click', function(){
+        // open who am i
         $('.who p').toggleClass('active');
+        // flip arrow
+        $('.who img').toggleClass('face-up');
     });
 
     /*//////////////////////////////////////
@@ -24,8 +27,6 @@ $(function(){
         dots: false,
         arrows: true,
         infinite: true,
-        // slidesToShow: 3,
-        // slidesToScroll: 3
     });
 
 });

@@ -3,28 +3,74 @@
     margin-top: -20px;
     h1{
         color: $light;
-        padding-top: 20px;
+    }
+    p{
+        margin-top: 20px;
+        color: $light;
     }
     .who{
+        width: 100%;
+        padding: 20px 0 40px 0;
+        @include clearfix;
+        h1{
+            display: inline-block;
+        }
+        img{
+            height: 25px;
+            width: 25px;
+            margin-top: 5px;
+            display: inline-block;
+            float: right;
+            @include transform(rotate(-90deg));
+            @include transition(all .3s ease-in-out);
+            &.face-up{
+                @include transform(rotate(90deg));
+            }
+        }
         p{
             display: none;
-        }
-        p.active{
-            display: block;
+            @include transition(all .3s ease-in-out);
+            &.active{
+                display: block;
+            }
         }
     }
     ul.slick-slider{
         padding-top: 20px;
         padding-bottom: 20px;
         li{
-            &.slick-slide.slick-current.slick-active{
+            &.slick-slide{
                 outline: none;
                 overflow: hidden;
                 p{
                     width: 60%;
                     text-align: center;
                     margin: 0 auto;
-                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media all and(min-width: 800px){
+    .introduction{
+        h1{
+            text-align: center;
+        }
+        .who{
+            p{
+                margin: 10px auto;
+                text-align: center;
+                width: 60%;
+            }
+        }
+        ul.slick-slider{
+            width: 400px;
+            margin: 0 auto;
+            li{
+                &.slick-slide{
+                    width: 400px;
+                    margin: 0 auto;
                 }
             }
         }

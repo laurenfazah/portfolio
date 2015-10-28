@@ -61,7 +61,7 @@ $slick-opacity-not-active: 0.25 !default;
     display: block;
     height: 40px;
     width: 40px;
-    // line-height: 0px;
+    line-height: 0px;
     font-size: 0px;
     cursor: pointer;
     background: $dark;
@@ -72,9 +72,11 @@ $slick-opacity-not-active: 0.25 !default;
     border: none;
     outline: none;
     border-radius: 50%;
+    z-index: 99;
     &:hover, &:focus {
         outline: none;
         background: darken($dark, 20%);
+        cursor: pointer;
         color: transparent;
         &:before {
             opacity: $slick-opacity-on-hover;

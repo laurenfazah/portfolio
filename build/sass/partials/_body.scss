@@ -8,16 +8,8 @@ body{
 main {
     section {
         &.info{
-            padding: 0 20px;
+            padding: 20px;
             width: 100%;
-            h1{
-                margin-top: 20px;
-            }
-            p{
-            }
-            &.portfolio{
-                margin-bottom: 50px;
-            }
         }
     }
 }
