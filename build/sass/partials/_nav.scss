@@ -5,6 +5,7 @@ nav{
     background: $dark;
     color: $light;
     z-index: 99;
+    height: $header-height;
     .burger{
         display: block;
         height: $header-height;
@@ -17,6 +18,7 @@ nav{
         }
     }
     ul{
+        opacity: .95;
         background: $dark;
         width: 100%;
         position: fixed;
@@ -63,6 +65,7 @@ nav{
             display: none;
         }
         ul{
+            opacity: 1;
             display: block;
             padding: 10px 0;
             @include clearfix;
