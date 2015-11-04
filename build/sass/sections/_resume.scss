@@ -12,15 +12,29 @@
             margin-bottom: 15px;
             border-bottom: 4px $gold solid;
             background: $silver;
-            p{
-                @extend %absolute-middle;
-                width: 100%;
-                font-size: 2em;
-                line-height: 28px;
-                letter-spacing: -1px;
-                text-align: center;
-                color: $light;
-                text-transform: lowercase;
+            color: $light;
+            padding: 20px;
+            &.front{
+                p{
+                    @extend %absolute-middle;
+                    width: 90%;
+                    font-size: 3em;
+                    line-height: 28px;
+                    letter-spacing: -1px;
+                    text-align: center;
+                    text-transform: lowercase;
+                }
+            }
+            &.back{
+                text-align: left;
+                h2{
+                    &.location{
+                        text-align: right;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -34,12 +48,6 @@
         .card{
             @include span-columns(6);
             @include omega(2n);
-            .content{
-                p{
-                    font-size: 40px;
-                    line-height: 44px;
-                }
-            }
         }
     }
 }

@@ -34,17 +34,26 @@ h1,h2,h3,h4,h5,h6{
     font-weight:700;
 }
 
-p, li{
-    font-size: 16px;
+p, a{
+    font-size: 1.5em;
     line-height: 20px;
 }
 
 h1{
-    font-size: 28px;
+    font-size: 3em;
     line-height: 36px;
     letter-spacing: -1px;
     margin-bottom: 20px;
 }
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2em;
+}
+
 
 *{
     &::selection {
@@ -161,6 +170,21 @@ button,input[type="submit"]{
     display:block;
 }
 
+%scrollbar{
+    &::-webkit-scrollbar {
+        background-color:$light;
+        border-radius: 50px;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track  {
+        background-color: $light;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color:$light;
+        width: 5px;
+    }
+}
 
 body,html{
     display:block;
