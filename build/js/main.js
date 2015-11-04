@@ -9,6 +9,24 @@ $(function(){
         });
     }
 
+    var closeMenu = function(){
+        if ($('nav ul').hasClass('active')){
+            $('nav ul').removeClass('active');
+        }
+    };
+
+    $('header').on('click', function(){
+        closeMenu();
+    });
+
+    $('main').on('click', function(){
+        closeMenu();
+    });
+
+    $('footer').on('click', function(){
+        closeMenu();
+    });
+
     /*//////////////////////////////////////
     //  intro section
     //////////////////////////////////////*/
