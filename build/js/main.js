@@ -18,15 +18,7 @@ $(function(){
         }
     };
 
-    $('header').on('click', function(){
-        closeMenu();
-    });
-
-    $('main').on('click', function(){
-        closeMenu();
-    });
-
-    $('footer').on('click', function(){
+    $('header, main, footer').on('click', function(){
         closeMenu();
     });
 
@@ -69,21 +61,30 @@ $(function(){
     /*//////////////////////////////////////
     //  resume section
     //////////////////////////////////////*/
-
-    $(".card").flip({
-      // axis: 'x',
-      // trigger: 'click'
-    });
+    // jquery flip()
+    $(".card").flip();
 
 
     /*//////////////////////////////////////
     //  fun facts carousel
     //////////////////////////////////////*/
+
     $('.slick-it').slick({
         slide: '.slick-it li',
         dots: false,
         arrows: true,
         infinite: true,
     });
+
+    /*//////////////////////////////////////
+    //  contact form
+    //////////////////////////////////////*/
+
+    $('form[name="contact_form"]').submit(function(e){
+        e.preventDefault();
+        $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
+        $('.email-thanks').text('thanks for the message!');
+    });
+
 
 });

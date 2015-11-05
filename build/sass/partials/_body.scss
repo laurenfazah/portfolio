@@ -19,22 +19,6 @@ main {
     padding-top: $header-height;
 }
 
-// scroll arrow fixed to page
-.scroll-to.top{
-    position: fixed;
-    bottom: 100px;
-    right: 50px;
-    background: $primary;
-    opacity: 0;
-    padding: 5px 10px;
-    @extend %opacity-transition;
-    img{
-        @include size(25px);
-        @include transform(rotate(90deg));
-    }
-
-}
-
 @media all and(min-width: 800px){
     body{
         padding-top: 0;
