@@ -27,7 +27,7 @@
         }
         input{
             height: 60px;
-            &[type="submit"]{
+            &[name="submit"]{
                 background: $primary;
                 color:$light;
                 border-bottom: 3px lighten($primary, 20%) solid;

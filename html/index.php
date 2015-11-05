@@ -1,3 +1,28 @@
+<?php
+    require '../vendor/autoload.php';
+    use Mailgun\Mailgun;
+
+    session_start();
+    if(isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message =  $_POST['message'];
+
+        # Instantiate the client.
+        $mgClient = new Mailgun('key-3e522d2966a5fbb738696e453ccde349');
+        $domain = "mail.laurenfazah.com";
+
+        # Make the call to the client.
+        $result = $mgClient->sendMessage($domain, array(
+            'from'    => $name . ' <' . $email . '>',
+            'to'      => 'Lauren <laurenfazah@gmail.com>',
+            'subject' => 'Portfolio Message',
+            'text'    => $message
+        ));
+    }
+    session_destroy();
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
     <head>
@@ -223,14 +248,16 @@
             </section>
 
             <section id="contact" class="contact">
-                <form  method="post" name="contact_form" action="contact-form.php">
+
+                <form  method="post" name="contact_form" action="">
                     <h1>want to chat?</h1>
                     <input type="text" name="name" placeholder="name" required>
                     <input type="email" name="email" placeholder="email" required>
                     <textarea name="message" cols="30" rows="10" placeholder="drop a message..." required></textarea>
-                    <input type="submit" value="send off">
+                    <input type="submit" value="send off" name="submit">
                     <h1 class="email-thanks"></h1>
                 </form>
+
             </section>
 
         </main>

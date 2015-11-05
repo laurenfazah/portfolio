@@ -80,10 +80,9 @@ $(function(){
     //  contact form
     //////////////////////////////////////*/
 
-    $('form[name="contact_form"]').submit(function(e){
-        e.preventDefault();
-        $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
-        $('.email-thanks').text('thanks for the message!');
+    $('form[name="contact_form"]').submit(function(){
+        // $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
+        // $('.email-thanks').text('thanks for the message!');
     });
 
 
