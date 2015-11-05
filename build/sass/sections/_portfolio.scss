@@ -8,7 +8,7 @@
         margin-bottom: 15px;
         display: block;
         position:relative;
-        border: 1px $gold solid;
+        border: 1px $primary solid;
         background-size: 100%;
         background-repeat:no-repeat;
         background-position:center;
@@ -22,7 +22,7 @@
             width: 100%;
             line-height: 80px;
             padding: 0 20px;
-            background: $silver;
+            background: $accent;
             color: $light;
         }
     }
@@ -72,8 +72,8 @@
             @include outer-container();
         }
         li{
-            @include span-columns(6);
-            @include omega(2n);
+            @include span-columns(3);
+            @include omega(4n);
         }
     }
 }

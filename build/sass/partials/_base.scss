@@ -18,8 +18,9 @@ $linkedin: #3574af;
 
 $light:#fff;
 $dark: #231f20;
-$gold: #a08958;
-$silver: #cbc8c7;
+$primary: #00AE8F;
+// $gold: #a08958;
+$accent: #cbc8c7;
 
 $red: #800000;
 $blue: #008080;
@@ -57,10 +58,10 @@ h3{
 
 *{
     &::selection {
-        background: $gold;
+        background: $primary;
     }
     &::-moz-selection {
-        background: $gold;
+        background: $primary;
     }
 }
 
@@ -139,6 +140,12 @@ button,input[type="submit"]{
 
 %default-transition{
     @include transition(all .3s ease-in-out);
+}
+
+%opacity-transition{
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 
 %middle{

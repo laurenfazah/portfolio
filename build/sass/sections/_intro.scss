@@ -1,6 +1,7 @@
 .introduction{
-    background: lighten($gold, 20%);
-    margin-top: -20px;
+    height: 80vh;
+    background: $primary;
+    padding-top: $header-height;
     h1{
         color: $light;
     }
@@ -10,19 +11,19 @@
     }
     .who{
         width: 100%;
-        padding: 20px 0 40px 0;
+        padding-bottom:40px;
         @include clearfix;
         h1{
             display: inline-block;
         }
         img{
-            height: 25px;
-            width: 25px;
+            @include size(25px);
             margin-top: 5px;
             display: inline-block;
             float: right;
             @include transform(rotate(-90deg));
-            @extend %default-transition;
+            @include transition(all .1s ease-in-out);
+            // @extend %default-transition;
             &.face-up{
                 @include transform(rotate(90deg));
             }
@@ -54,14 +55,15 @@
 
 @media all and(min-width: 800px){
     .introduction{
-        h1{
-            text-align: center;
-        }
         .who{
+            width: 40%;
+            margin: 0 auto;
+            h1{
+                text-align: center;
+            }
             p{
                 margin: 10px auto;
                 text-align: center;
-                width: 60%;
             }
         }
         ul.slick-slider{
@@ -69,10 +71,13 @@
             margin: 0 auto;
             li{
                 &.slick-slide{
-                    width: 400px;
                     margin: 0 auto;
                 }
             }
+        }
+        .fun-facts{
+            width: 40%;
+            margin: 0 auto;
         }
     }
 }
