@@ -34,7 +34,7 @@ nav{
             line-height:40px;
             width: 100px;
             margin: 0 auto;
-            border-bottom: 1px $gold solid;
+            border-bottom: 1px $primary solid;
             &:first-child{
                 display: none;
             }
@@ -63,7 +63,7 @@ nav{
                     border-bottom: none;
                 }
                 &:last-child{
-                    border-bottom: 1px $gold solid;
+                    border-bottom: 1px $primary solid;
                 }
             }
         }

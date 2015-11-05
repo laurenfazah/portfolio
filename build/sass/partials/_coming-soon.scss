@@ -1,8 +1,9 @@
 .coming-soon{
-    background: $dark;
+    background: lighten($dark, 20%);
     height: 100vh;
     position: relative;
     header{
+        background: lighten($dark, 20%);
         bottom: auto;
         top: 0;
         padding: 0;
@@ -20,7 +21,7 @@
                     text-decoration: none;
                     vertical-align: middle;
                     font-weight: 200;
-                    color: $gold;
+                    color: $light;
                     z-index: 1;
                 }
                 img{
@@ -31,7 +32,7 @@
         }
     }
     h1{
-        color: $gold;
+        color: $light;
         @extend %absolute-middle;
         font-size: 50px;
     }
@@ -39,9 +40,10 @@
         position: absolute;
         top: auto;
         bottom: 0;
-        background: $gold;
+        background: $primary;
         p{
             font-weight: 200;
+            color: $light;
         }
     }
 }

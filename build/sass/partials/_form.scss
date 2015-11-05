@@ -7,7 +7,7 @@
             text-align: center;
             line-height: 60px;
             margin-bottom: 20px;
-            color: $gold;
+            color: $primary;
         }
         input, textarea{
             display: block;
@@ -18,18 +18,18 @@
             padding: 10px;
             border: none;
             // border-radius: 5px;
-            border-bottom: 4px $silver solid;
+            border-bottom: 4px $accent solid;
             transition: border 0.3s;
             &:focus{
-                border-bottom: 4px darken($silver, 20%) solid;
+                border-bottom: 4px darken($accent, 20%) solid;
             }
         }
         input{
             height: 60px;
             &[type="submit"]{
-                background: $gold;
+                background: $primary;
                 color:$light;
-                border-bottom: 3px lighten($gold, 20%) solid;
+                border-bottom: 3px lighten($primary, 20%) solid;
             }
         }
         textarea{
