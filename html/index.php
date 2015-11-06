@@ -104,9 +104,11 @@
                         <div class="content back">
                             <h2 class="location">Boston, MA</h2>
 
-                            <h2>Full Stack Web Developer</h2>
-                            <h3>January 2015 - Present</h3>
-                            <p>Involved with both internal and client, individual and group, front end and back end, as well as experimental projects.</p>
+                            <div class="job">
+                                <h2>Full Stack Web Developer</h2>
+                                <h3>January 2015 - Present</h3>
+                                <p>Involved with both internal and client, individual and group, front end and back end, as well as experimental projects.</p>
+                            </div>
                         </div>
                     </li>
                     <li class="card">
@@ -116,14 +118,18 @@
                         <div class="content back">
                             <h2 class="location">Boston, MA</h2>
 
-                            <h2>TA, Front End Web Development Course</h2>
-                            <h3>September 2015 - Present</h3>
-                            <p>Assisted instructors in teaching front end web development to 15-20 students during 10 week courses.</p>
+                            <div class="job">
+                                <h2>TA, Front End Web Development Course</h2>
+                                <h3>September 2015 - Present</h3>
+                                <p>Assisted instructors in teaching front end web development to 15-20 students during 10 week courses.</p>
+                            </div>
 
-                            <h2>Workshop Instructor</h2>
-                            <h3>May 2015 - Present</h3>
-                            <a href="https://generalassemb.ly/education/the-what-why-of-apis" target="_blank">The What and Why of APIs</a>
-                            <a href="https://generalassemb.ly/education/coding-for-beginners-html-and-css" target="_blank"><p>Coding for Beginners: HTML and CSS</p></a>
+                            <div class="job">
+                                <h2>Workshop Instructor</h2>
+                                <h3>May 2015 - Present</h3>
+                                <p><a href="https://generalassemb.ly/education/the-what-why-of-apis" target="_blank">The What and Why of APIs</a></p>
+                                <p><a href="https://generalassemb.ly/education/coding-for-beginners-html-and-css" target="_blank">Coding for Beginners: HTML and CSS</a></p>
+                            </div>
                         </div>
                     </li>
                     <li class="card">
@@ -132,9 +138,12 @@
                         </div>
                         <div class="content back">
                             <h2 class="location">Anywhere, USA</h2>
-                            <h2>Full Stack Web Developer</h2>
-                            <h3>May 2014 - Present</h3>
-                            <p>Ongoing full-stack web development on a variety of projects including blogs, ecommerce, and landing pages.</p>
+
+                            <div class="job">
+                                <h2>Full Stack Web Developer</h2>
+                                <h3>May 2014 - Present</h3>
+                                <p>Ongoing full-stack web development on a variety of projects including blogs, ecommerce, and landing pages.</p>
+                            </div>
                         </div>
                     </li>
                     <li class="card">
@@ -144,13 +153,17 @@
                         <div class="content back">
                             <h2 class="location">Boston, MA</h2>
 
-                            <h2>Special Projects Assistant to the Chief Operating Officer</h2>
-                            <h3>January 2013 - June 2014</h3>
-                            <p>Effectively managed the COO’s daily workflow, created policy documents, drafted office-wide communications, and supported the organization’s Operating Model Transition</p>
+                            <div class="job">
+                                <h2>Special Projects Assistant to the Chief Operating Officer</h2>
+                                <h3>January 2013 - June 2014</h3>
+                                <p>Effectively managed the COO’s daily workflow, created policy documents, drafted office-wide communications, and supported the organization’s Operating Model Transition</p>
+                            </div>
 
-                            <h2>Special Projects Assistant to the Chief People Officer</h2>
-                            <h3>April 2012 – August 2012</h3>
-                            <p>Assisted the CPO with schedule management, department events, office build-out and staff promotions</p>
+                            <div class="job">
+                                <h2>Special Projects Assistant to the Chief People Officer</h2>
+                                <h3>April 2012 – August 2012</h3>
+                                <p>Assisted the CPO with schedule management, department events, office build-out and staff promotions</p>
+                            </div>
                         </div>
                     </li>
                     <li class="card">
@@ -160,9 +173,11 @@
                         <div class="content back">
                             <h2 class="location">Belgrade, Serbia</h2>
 
-                            <h2>Assistant to the Chief Prosecutor</h2>
-                            <h3>September 2012 - December 2012</h3>
-                            <p>Summarized full court case transcripts for this branch of the International Criminal Tribunal for the former Yugoslavia (ICTY) and analyzed patterns in digital evidence and first-hand witness accounts of war crimes</p>
+                            <div class="job">
+                                <h2>Assistant to the Chief Prosecutor</h2>
+                                <h3>September 2012 - December 2012</h3>
+                                <p>Summarized full court case transcripts for this branch of the International Criminal Tribunal for the former Yugoslavia (ICTY) and analyzed patterns in digital evidence and first-hand witness accounts of war crimes</p>
+                            </div>
                         </div>
                     </li>
                     <li class="card">
@@ -172,9 +187,11 @@
                         <div class="content back">
                             <h2 class="location">New York City, New York</h2>
 
-                            <h2>Meetings Services Assistant</h2>
-                            <h3>September 2011 - December 2011</h3>
-                            <p>Directly assisted all interpretation and documentation of the General Debate of the 66th session of the General Assembly</p>
+                            <div class="job">
+                                <h2>Meetings Services Assistant</h2>
+                                <h3>September 2011 - December 2011</h3>
+                                <p>Directly assisted all interpretation and documentation of the General Debate of the 66th session of the General Assembly</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
