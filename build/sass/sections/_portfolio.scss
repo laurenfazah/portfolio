@@ -1,36 +1,44 @@
 .portfolio{
-    ul{
-        position: relative;
+    div.portfolio-carousel{
+        margin: 0 auto;
         margin-bottom: 80px;
+        max-width: 800px !important;
     }
-    li{
+    div.piece{
         width:100%;
-        margin-bottom: 15px;
         display: block;
+        margin: 0 auto !important;
+        margin-bottom: 50px !important;
+        outline: none;
         position:relative;
         border: 1px $primary solid;
-        background-size: 100%;
+        background: $accent;
+        background-size: cover;
         background-repeat:no-repeat;
-        background-position:center;
+        background-position:center top;
         @extend %default-transition;
-        &:before{
-            content:" ";
-            display:block;
-            padding-top:140%;
-        }
+        height: 500px;
+        // &:before{
+        //     content:" ";
+        //     display:block;
+        //     padding-top:60%;
+        // }
         p{
             width: 100%;
             line-height: 80px;
             padding: 0 20px;
-            background: $accent;
+            background: $primary;
             color: $light;
+            opacity: .9;
+            position: absolute;
+            bottom: 0;
         }
     }
     .freelance{
 
     }
     .career{
-        li{
+        div.piece{
             &.tvnext{
                 background-image: image-url('tvnext-companion.png');
             }
@@ -55,7 +63,7 @@
         }
     }
     .personal{
-        li{
+        div.piece{
             &.storymaker{
                 background-image: image-url('storymaker-story.png');
             }
@@ -68,12 +76,12 @@
 
 @media all and(min-width:800px){
     .portfolio{
-        ul{
-            @include outer-container();
-        }
-        li{
-            @include span-columns(3);
-            @include omega(4n);
-        }
+        // div.portfolio-carousel{
+        //     @include outer-container();
+        // }
+        // div.piece{
+        //     @include span-columns(3);
+        //     @include omega(4n);
+        // }
     }
 }

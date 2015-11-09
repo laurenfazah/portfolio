@@ -41,11 +41,12 @@ $(function(){
 
     $document.scroll(function() {
         if ($document.scrollTop() >= 400) {
-            $('.scroll-to.top').css('opacity', '.95');
+            $('.scroll-to.top').css('opacity', '.75');
         } else {
             $('.scroll-to.top').css('opacity', '0');
         }
     });
+
 
     /*//////////////////////////////////////
     //  intro section
@@ -74,6 +75,19 @@ $(function(){
         dots: false,
         arrows: true,
         infinite: true,
+    });
+
+    /*//////////////////////////////////////
+    //  portfolio carousel
+    //////////////////////////////////////*/
+
+    $('.portfolio-carousel').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrow: true
     });
 
     /*//////////////////////////////////////

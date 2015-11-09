@@ -212,65 +212,65 @@
 
                 <div class="freelance">
                     <h1>in my "free" time</h1>
-                    <ul>
-                        <li class="roughwood">
+                    <div class="portfolio-carousel">
+                        <div class="piece roughwood">
                             <p>Roughwood</p>
-                        </li>
-                        <li class="backlash">
+                        </div>
+                        <div class="piece backlash">
                             <p>Backlash</p>
-                        </li>
-                        <li class="intuit">
+                        </div>
+                        <div class="piece intuit">
                             <p>Intuit</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="career">
                     <h1>on the job</h1>
-                    <ul>
-                        <li class="tvnext">
+                    <div class="portfolio-carousel">
+                        <div class="piece tvnext">
                             <p>TVnext Companion</p>
-                        </li>
-                        <li class="brandfeed">
+                        </div>
+                        <div class="piece brandfeed">
                             <p>Brandfeed</p>
-                        </li>
-                        <li class="training-portal">
+                        </div>
+                        <div class="piece training-portal">
                             <p>Training Portal</p>
-                        </li>
-                        <li class="onebostonday">
+                        </div>
+                        <div class="piece onebostonday">
                             <p>OBD Award Submission</p>
-                        </li>
-                        <li class="hhcc-app">
+                        </div>
+                        <div class="piece hhcc-app">
                             <p>Hill Holliday App</p>
-                        </li>
-                        <li class="passion">
+                        </div>
+                        <div class="piece passion">
                             <p>Passion to Protect</p>
-                        </li>
-                        <li class="rfid">
+                        </div>
+                        <div class="piece rfid">
                             <p>RFID Scanner with API</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="personal">
                     <h1>personal fun</h1>
-                    <ul>
-                        <li class="storymaker">
+                    <div class="portfolio-carousel">
+                        <div class="piece storymaker">
                             <p>StoryMaker</p>
-                        </li>
-                        <li class="pixelect">
+                        </div>
+                        <div class="piece pixelect">
                             <p>Pixelect</p>
-                        </li>
-                        <li class="tic-tac-toe">
+                        </div>
+                        <div class="piece tic-tac-toe">
                             <p>Tic Tac Toe</p>
-                        </li>
-                        <li class="selfless">
+                        </div>
+                        <div class="piece selfless">
                             <p>Selfless</p>
-                        </li>
-                        <li class="video-interaction">
+                        </div>
+                        <div class="piece video-interaction">
                             <p>2024 Video Interaction</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
 
             </section>
