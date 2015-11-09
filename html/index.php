@@ -77,8 +77,9 @@
                 <div class="who">
                     <h1>who am i?</h1>
                     <img src="img/leftarrow.svg" alt="arrow">
-                    <p>i, indeed am lauren fazah. i often feel like i'm living a dream. web development is too much fun not to question reality, right?</p>
-                    <p>it took a windy road and some self-discovery, but i really couldn't emphasize enough how happy i am where i landed.</p>
+                    <!-- <p>i, indeed am lauren fazah. i often feel like i'm living a dream. web development is too much fun not to question reality, right?</p> -->
+                    <!-- <p>it took a windy road and some self-discovery, but i really couldn't emphasize enough how happy i am where i landed.</p> -->
+                    <p>blah blah blah about me</p>
                 </div>
 
                 <div class="fun-facts">
@@ -92,6 +93,10 @@
                     </ul>
                 </div>
 
+                <!-- article mentions -->
+                <!-- http://www.boston.com/jobs/news/2015/03/08/what-like-woman-where-you-work/qWXwqrUNEixEyXWYBXaEAP/pictures.html#slide-1 -->
+                <!-- http://www.boston.com/jobs/news/2015/03/09/advice-for-women-looking-break-into-the-tech-field/tVPJG1x1UhKcWzU0GoihNI/story.html -->
+
             </section>
 
             <section id="work" class="resume info">
@@ -99,11 +104,12 @@
                 <ul>
                     <li class="card">
                         <div class="content front">
-                            <p>Hill Holliday</p>
+                            <div class="main-info">
+                                <p>Hill Holliday</p>
+                                <h2 class="location">Boston, MA</h2>
+                            </div>
                         </div>
                         <div class="content back">
-                            <h2 class="location">Boston, MA</h2>
-
                             <div class="job">
                                 <h2>Full Stack Web Developer</h2>
                                 <h3>January 2015 - Present</h3>
@@ -113,11 +119,12 @@
                     </li>
                     <li class="card">
                         <div class="content front">
-                            <p>General Assembly</p>
+                            <div class="main-info">
+                                <p>General Assembly</p>
+                                <h2 class="location">Boston, MA</h2>
+                            </div>
                         </div>
                         <div class="content back">
-                            <h2 class="location">Boston, MA</h2>
-
                             <div class="job">
                                 <h2>TA, Front End Web Development Course</h2>
                                 <h3>September 2015 - Present</h3>
@@ -134,11 +141,12 @@
                     </li>
                     <li class="card">
                         <div class="content front">
-                            <p>Freelance</p>
+                            <div class="main-info">
+                                <p>Freelance</p>
+                                <h2 class="location">Anywhere, USA</h2>
+                            </div>
                         </div>
                         <div class="content back">
-                            <h2 class="location">Anywhere, USA</h2>
-
                             <div class="job">
                                 <h2>Full Stack Web Developer</h2>
                                 <h3>May 2014 - Present</h3>
@@ -148,11 +156,12 @@
                     </li>
                     <li class="card">
                         <div class="content front">
-                            <p>City Year</p>
+                            <div class="main-info">
+                                <p>City Year</p>
+                                <h2 class="location">Boston, MA</h2>
+                            </div>
                         </div>
                         <div class="content back">
-                            <h2 class="location">Boston, MA</h2>
-
                             <div class="job">
                                 <h2>Special Projects Assistant to the Chief Operating Officer</h2>
                                 <h3>January 2013 - June 2014</h3>
@@ -168,11 +177,12 @@
                     </li>
                     <li class="card">
                         <div class="content front">
-                            <p>Office of the War Crimes Prosecutor</p>
+                            <div class="main-info">
+                                <p>Office of the War Crimes Prosecutor</p>
+                                <h2 class="location">Belgrade, Serbia</h2>
+                            </div>
                         </div>
                         <div class="content back">
-                            <h2 class="location">Belgrade, Serbia</h2>
-
                             <div class="job">
                                 <h2>Assistant to the Chief Prosecutor</h2>
                                 <h3>September 2012 - December 2012</h3>
@@ -182,11 +192,12 @@
                     </li>
                     <li class="card">
                         <div class="content front">
-                            <p>United Nations Headquarters</p>
+                            <div class="main-info">
+                                <p>United Nations Headquarters</p>
+                                <h2 class="location">New York City, New York</h2>
+                            </div>
                         </div>
                         <div class="content back">
-                            <h2 class="location">New York City, New York</h2>
-
                             <div class="job">
                                 <h2>Meetings Services Assistant</h2>
                                 <h3>September 2011 - December 2011</h3>

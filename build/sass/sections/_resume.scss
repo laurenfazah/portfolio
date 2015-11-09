@@ -14,19 +14,26 @@
             background: $accent;
             color: $light;
             padding: 20px;
+            position: relative;
             &.front{
-                p{
+                .main-info{
                     @extend %absolute-middle;
-                    width: 90%;
-                    font-size: 3em;
-                    line-height: 28px;
-                    letter-spacing: -1px;
-                    text-align: center;
                     text-transform: lowercase;
+                    text-align: center;
+                    p{
+                        font-size: 3em;
+                        line-height: 28px;
+                        letter-spacing: -1px;
+                        margin-bottom: 10px;
+                    }
+                    .location{
+                        font-weight: 100;
+                    }
                 }
             }
             &.back{
                 overflow: scroll;
+                @extend %scrollbar;
                 .location{
                     text-align: right;
                     margin-bottom: 15px;
