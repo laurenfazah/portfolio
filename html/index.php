@@ -214,13 +214,19 @@
                     <h1>in my "free" time</h1>
                     <div class="portfolio-carousel">
                         <div class="piece roughwood">
-                            <p>Roughwood</p>
+                            <a href="roughwood.luxury" class="title"><p class="title">Roughwood</p></a>
+                            <p class="role">Lead JavaScript Developer</p>
+                            <p class="description">Co-built this private ecommerce site with an AngularJS front end making API calls to Springboard and Auth0.</p>
                         </div>
                         <div class="piece backlash">
-                            <p>Backlash</p>
+                            <p class="title">Backlash</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
                         </div>
                         <div class="piece intuit">
-                            <p>Intuit</p>
+                            <p class="title">Intuit</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description">Built multiple landing pages for this company</p>
                         </div>
                     </div>
                 </div>
@@ -228,26 +234,50 @@
                 <div class="career">
                     <h1>on the job</h1>
                     <div class="portfolio-carousel">
+                        <div class="piece training-portal">
+                            <p class="title">Adcademy</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description">Built this internal training portal for Hill Holliday with a PHP backend, MySQL database, and Twitter Bootstrapped front-end</p>
+                        </div>
                         <div class="piece tvnext">
-                            <p>TVnext Companion</p>
+                            <p class="title">TVnext Companion Site</p>
+                            <p class="role">Front-End Developer</p>
+                            <p class="description">Built the day-of Companion site for the 2015 TVnext conference on a Craft CMS</p>
+                        </div>
+                        <div class="piece www">
+                            <p class="title">Whole World Water</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description">Wordpress blog</p>
                         </div>
                         <div class="piece brandfeed">
-                            <p>Brandfeed</p>
+                            <p class="title">Brandfeed</p>
+                            <p class="role">Lead JavaScript Developer</p>
+                            <p class="description">In house, in-progress social analytics app built with an AngularJS front-end, speaking to a PHP back-end API</p>
                         </div>
                         <div class="piece training-portal">
-                            <p>Training Portal</p>
+                            <p class="title">Adcademy</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description">Built this internal training portal for Hill Holliday with a PHP backend, MySQL database, and Twitter Bootstrapped front-end</p>
                         </div>
                         <div class="piece onebostonday">
-                            <p>OBD Award Submission</p>
+                            <p class="title">OBD Award Submission</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
                         </div>
                         <div class="piece hhcc-app">
-                            <p>Hill Holliday App</p>
+                            <p class="title">Hill Holliday App Landing Page</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description">to announce the company's iOS app</p>
                         </div>
                         <div class="piece passion">
-                            <p>Passion to Protect</p>
+                            <p class="title">Passion to Protect</p>
+                            <p class="role">Front-End Developer</p>
+                            <p class="description"></p>
                         </div>
                         <div class="piece rfid">
-                            <p>RFID Scanner with API</p>
+                            <p class="title">RFID Scanner with API</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
                         </div>
                     </div>
                 </div>
@@ -256,20 +286,30 @@
                     <h1>personal fun</h1>
                     <div class="portfolio-carousel">
                         <div class="piece storymaker">
-                            <p>StoryMaker</p>
+                            <p class="title">StoryMaker</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
                         </div>
-                        <div class="piece pixelect">
-                            <p>Pixelect</p>
-                        </div>
+      <!--                   <div class="piece pixelect">
+                            <p class="title">Pixelect</p>
+                            <p class="role">Lead HTML/CSS Developer</p>
+                            <p class="description"></p>
+                        </div> -->
                         <div class="piece tic-tac-toe">
-                            <p>Tic Tac Toe</p>
+                            <p class="title">Tic Tac Toe</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
                         </div>
                         <div class="piece selfless">
-                            <p>Selfless</p>
+                            <p class="title">Selfless</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
                         </div>
-                        <div class="piece video-interaction">
+                       <!--  <div class="piece video-interaction">
                             <p>2024 Video Interaction</p>
-                        </div>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
+                        </div> -->
                     </div>
                 </div>
 

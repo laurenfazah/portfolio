@@ -35,12 +35,25 @@
         }
     }
     .freelance{
-
+        div.piece{
+            &.roughwood{
+                background-image: image-url('roughwood-product.png');
+            }
+            &.backlash{
+                background-image: image-url('');
+            }
+            &.intuit{
+                background-image: image-url('');
+            }
+        }
     }
     .career{
         div.piece{
             &.tvnext{
                 background-image: image-url('tvnext-companion.png');
+            }
+            &.www{
+                background-image: image-url('wholeworldwater.png');
             }
             &.brandfeed{
                 background-image: image-url('');
@@ -58,7 +71,7 @@
                 background-image: image-url('passion-poll_article.png');
             }
             &.rfid{
-                background-image: image-url('');
+                background-image: image-url('arduino.png');
             }
         }
     }
@@ -69,6 +82,9 @@
             }
             &.selfless{
                 background-image: image-url('selfless.png');
+            }
+            &.tic-tac-toe{
+                background-image: image-url('ttt.png');
             }
         }
     }
