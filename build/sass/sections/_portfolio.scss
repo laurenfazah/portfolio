@@ -36,11 +36,17 @@
             &.roughwood{
                 background-image: image-url('roughwood-product.png');
             }
-            &.backlash{
-                background-image: image-url('');
-            }
             &.intuit{
                 background-image: image-url('');
+            }
+            &.storymaker{
+                background-image: image-url('storymaker-story.png');
+            }
+            &.selfless{
+                background-image: image-url('selfless.png');
+            }
+            &.tic-tac-toe{
+                background-image: image-url('ttt.png');
             }
         }
     }
@@ -74,15 +80,7 @@
     }
     .personal{
         div.piece{
-            &.storymaker{
-                background-image: image-url('storymaker-story.png');
-            }
-            &.selfless{
-                background-image: image-url('selfless.png');
-            }
-            &.tic-tac-toe{
-                background-image: image-url('ttt.png');
-            }
+
         }
     }
 }

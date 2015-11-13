@@ -221,16 +221,36 @@
                             <p class="role">Lead JavaScript Developer</p>
                             <p class="description">Co-built this private ecommerce site with an AngularJS front end making API calls to Springboard and Auth0.</p>
                         </div>
-                        <div class="piece backlash">
-                            <p class="title">Backlash</p>
-                            <p class="role">Sole Developer</p>
-                            <p class="description"></p>
-                        </div>
                         <div class="piece intuit">
                             <p class="title">Intuit</p>
                             <p class="role">Sole Developer</p>
                             <p class="description">Built multiple landing pages for this company</p>
                         </div>
+                        <div class="piece storymaker">
+                            <p class="title">StoryMaker</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
+                        </div>
+      <!--                   <div class="piece pixelect">
+                            <p class="title">Pixelect</p>
+                            <p class="role">Lead HTML/CSS Developer</p>
+                            <p class="description"></p>
+                        </div> -->
+                        <div class="piece tic-tac-toe">
+                            <p class="title">Tic Tac Toe</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
+                        </div>
+                        <div class="piece selfless">
+                            <p class="title">Selfless</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
+                        </div>
+                       <!--  <div class="piece video-interaction">
+                            <p>2024 Video Interaction</p>
+                            <p class="role">Sole Developer</p>
+                            <p class="description"></p>
+                        </div> -->
                     </div>
                 </div>
 
@@ -282,37 +302,6 @@
                             <p class="role">Sole Developer</p>
                             <p class="description"></p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="personal">
-                    <h1>personal fun</h1>
-                    <div class="portfolio-carousel">
-                        <div class="piece storymaker">
-                            <p class="title">StoryMaker</p>
-                            <p class="role">Sole Developer</p>
-                            <p class="description"></p>
-                        </div>
-      <!--                   <div class="piece pixelect">
-                            <p class="title">Pixelect</p>
-                            <p class="role">Lead HTML/CSS Developer</p>
-                            <p class="description"></p>
-                        </div> -->
-                        <div class="piece tic-tac-toe">
-                            <p class="title">Tic Tac Toe</p>
-                            <p class="role">Sole Developer</p>
-                            <p class="description"></p>
-                        </div>
-                        <div class="piece selfless">
-                            <p class="title">Selfless</p>
-                            <p class="role">Sole Developer</p>
-                            <p class="description"></p>
-                        </div>
-                       <!--  <div class="piece video-interaction">
-                            <p>2024 Video Interaction</p>
-                            <p class="role">Sole Developer</p>
-                            <p class="description"></p>
-                        </div> -->
                     </div>
                 </div>
 
