@@ -5,6 +5,7 @@ nav{
     background: $dark;
     color: $light;
     height: $header-height;
+    z-index: 9999;
     .burger{
         display: block;
         height: $header-height;
