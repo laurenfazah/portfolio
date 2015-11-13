@@ -77,19 +77,22 @@
                 <div class="who">
                     <h1>who am i?</h1>
                     <img src="img/leftarrow.svg" alt="arrow">
-                    <!-- <p>i, indeed am lauren fazah. i often feel like i'm living a dream. web development is too much fun not to question reality, right?</p> -->
-                    <!-- <p>it took a windy road and some self-discovery, but i really couldn't emphasize enough how happy i am where i landed.</p> -->
-                    <p>blah blah blah about me</p>
+                    <p>I had spent the majority of my life dreaming of a career in international politics - a life of travel, cuture, and beaurocracy.</p>
+                    <p>Yet after a few years of this work, I suddenly realized that 2 aspects of a career I yearned for were missing from this space - creativity and continued applicable learning.</p>
+                    <p>The moment I realized I wanted to work in development full-time was monumental; I've only looked forward since.</p>
+                    <p>My favorite aspect of development is its community of learning. My formal education in development came from a full-time bootcamp in Boston, and I have in turn been ever grateful for where that's positioned me career-wise.</p>
+                    <p>I cherish this community and try to stay involved as much as I can to push forward this momentum of pushing others out of their comfort zone to try out development.</p>
+                    <p>I'm grateful for the journey that got me on the path I'm on and love encouraging others to take the plunge as well.</p>
                 </div>
 
                 <div class="fun-facts">
-                    <h1>fun facts:</h1>
+                    <h1>a few fun facts about me:</h1>
                     <ul class="slick-it">
                         <li><p>first paid rent in belgrade, serbia</p></li>
                         <li><p>conversational in french and arabic</p></li>
                         <li><p>enjoys vegan cooking</p></li>
                         <li><p>not vegan</p></li>
-                        <!-- <li>my last name translates to "panic" in arabic</li> -->
+                        <li>my last name translates to "panic" in arabic</li>
                     </ul>
                 </div>
 

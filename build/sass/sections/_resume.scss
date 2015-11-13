@@ -30,6 +30,22 @@
                         font-weight: 100;
                     }
                 }
+                &:after{
+                    content: url("../img/round-info.svg");
+                    @include size(25px);
+                    @extend %default-transition;
+                    display: block;
+                    z-index: 9;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    opacity: .5;
+                }
+                &:hover{
+                    &:after{
+                        opacity: 1;
+                    }
+                }
             }
             &.back{
                 overflow: scroll;

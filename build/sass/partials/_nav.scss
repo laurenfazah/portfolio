@@ -4,12 +4,13 @@ nav{
     width: 100%;
     background: $dark;
     color: $light;
-    z-index: 9999;
     height: $header-height;
     .burger{
         display: block;
         height: $header-height;
+        background: $dark;
         width: 100%;
+        overflow: hidden;
         img{
             height: 40px;
             border: 1px $primary solid;
@@ -21,11 +22,14 @@ nav{
         opacity: .95;
         background: $dark;
         width: 100%;
-        position: fixed;
-        display: none;
+        position: absolute;
         text-align: center;
+        overflow: hidden;
+        top: -500px;
+        z-index: -1;
+        @include transition(all .66s ease-in-out);
         &.active{
-            display: block;
+            top: $header-height;
             li{
                 &:last-child{
                     margin-bottom: 20px;
@@ -67,8 +71,12 @@ nav{
         ul{
             opacity: 1;
             display: block;
+            top: 0;
             padding: 10px 0;
             @include clearfix;
+            &.active{
+                top: 0;
+            }
             li{
                 width: 20%;
                 float: left;
