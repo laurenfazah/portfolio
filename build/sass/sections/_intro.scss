@@ -1,7 +1,8 @@
 .introduction{
-    height: 60vh;
+    min-height: 60vh;
     background: $primary;
     padding-top: $header-height;
+    @include transition(all .66s ease-in-out);
     h1{
         color: $light;
     }
@@ -56,7 +57,7 @@
 @media all and(min-width: 800px){
     .introduction{
         .who{
-            width: 40%;
+            width: 60%;
             margin: 0 auto;
             h1{
                 text-align: center;
@@ -78,6 +79,8 @@
         .fun-facts{
             width: 40%;
             margin: 0 auto;
+            margin-bottom: 100px;
+            margin-top: 50px;
         }
     }
 }

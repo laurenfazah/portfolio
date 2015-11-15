@@ -20,15 +20,17 @@
         display: table-cell;
         vertical-align: bottom;
         height: 500px;
-        p{
+        .info{
             width: 100%;
-            line-height: 20px;
-            padding: 0 20px;
+            min-height: 20px;
+            padding: 20px;
             background: $primary;
-            color: $light;
             opacity: .9;
             position: absolute;
             bottom: 0;
+        }
+        p{
+            color: $light;
         }
     }
     .freelance{
