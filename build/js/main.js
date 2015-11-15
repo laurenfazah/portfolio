@@ -99,5 +99,14 @@ $(function(){
         // $('.email-thanks').text('thanks for the message!');
     });
 
+    /*//////////////////////////////////////
+    //  link out
+    //////////////////////////////////////*/
+    $('.click-thru').each(function(){
+        var linkContent = $(this).html();
+        linkContent += '<img class="link-icon" src="img/link_out.svg"\/>';
+        $(this).html(linkContent);
+    });
+
 
 });

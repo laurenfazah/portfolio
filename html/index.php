@@ -136,8 +136,8 @@
                             <div class="job">
                                 <h2>Workshop Instructor</h2>
                                 <h3>May 2015 - Present</h3>
-                                <p><a href="https://generalassemb.ly/education/the-what-why-of-apis" target="_blank">The What and Why of APIs</a></p>
-                                <p><a href="https://generalassemb.ly/education/coding-for-beginners-html-and-css" target="_blank">Coding for Beginners: HTML and CSS</a></p>
+                                <a href="https://generalassemb.ly/education/the-what-why-of-apis" target="_blank" class="click-thru"><p>The What and Why of APIs</p></a>
+                                <a href="https://generalassemb.ly/education/coding-for-beginners-html-and-css" target="_blank" class="click-thru"><p>Coding for Beginners: HTML and CSS</p></a>
                             </div>
                         </div>
                     </li>
@@ -217,7 +217,7 @@
                     <div class="portfolio-carousel">
                         <div class="piece roughwood">
                             <div class="info">
-                                <a href="roughwood.luxury" class="title"><p class="title">Roughwood</p></a>
+                                <a href="https://roughwood.luxury" class="click-thru title"><p class="title">Roughwood</p></a>
                                 <p class="role">Lead JavaScript Developer</p>
                                 <p class="description">Co-built this private ecommerce site with an AngularJS front end making API calls to Springboard and Auth0.</p>
                             </div>
