@@ -105,10 +105,13 @@ $(function(){
     /*//////////////////////////////////////
     //  contact form
     //////////////////////////////////////*/
+    function clearForm(){
+        $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
+    }
 
     $('form[name="contact_form"]').submit(function(){
-        // $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
-        // $('.email-thanks').text('thanks for the message!');
+        $('.email-thanks').text('thanks for the message!');
+        setTimeout(clearForm, 250);
     });
 
     /*//////////////////////////////////////
