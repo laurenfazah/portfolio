@@ -66,7 +66,7 @@
         </nav>
 
         <header id="top">
-            <h1>international affairs major turned passionate full-stack web developer</h1>
+            <h1>international affairs major turned full-stack web developer</h1>
         </header>
 
         <main>
@@ -335,55 +335,61 @@
             <section id="skills" class="skills info">
 
                 <h1>in my toolbox:</h1>
+
                 <ul class="skills-list languages">
-                    <li class="high">JavaScript</li>
-                    <li class="high">PHP</li>
-                    <li class="high">Ruby</li>
-                    <li class="high">HTML5</li>
-                    <li class="high">CSS3</li>
-                    <li class="low">Python</li>
+                <h2>languages:</h2>
+                    <li class="high"><p>JavaScript</p></li>
+                    <li class="high"><p>PHP</p></li>
+                    <li class="high"><p>Ruby</p></li>
+                    <li class="high"><p>HTML5</p></li>
+                    <li class="high"><p>CSS3</p></li>
+                    <li class="low"><p>Python</p></li>
                 </ul>
 
                 <ul class="skills-list frameworks">
-                    <li class="high">AngularJS</li>
-                    <li class="high">CodeIgniter</li>
-                    <li class="high">Rails</li>
-                    <li class="med">Laravel</li>
-                    <li class="med">Express</li>
-                    <li class="med">Backbone</li>
-                    <li class="med">Craft</li>
-                    <li class="low">WordPress</li>
+                <h2>frameworks:</h2>
+                    <li class="high"><p>AngularJS</p></li>
+                    <li class="high"><p>CodeIgniter</p></li>
+                    <li class="high"><p>Rails</p></li>
+                    <li class="med"><p>Laravel</p></li>
+                    <li class="med"><p>Express</p></li>
+                    <li class="med"><p>Backbone</p></li>
+                    <li class="med"><p>Craft</p></li>
+                    <li class="low"><p>WordPress</p></li>
                 </ul>
 
                 <ul class="skills-list libraries">
-                    <li class="high">jQuery</li>
-                    <li class="high">Sass/SCSS</li>
-                    <li class="high">Compass</li>
-                    <li class="high">Grunt</li>
-                    <li class="high">Twitter Bootstrap</li>
-                    <li class="high">Bower</li>
-                    <li class="high">Yeoman</li>
-                    <li class="med">Bourbon</li>
-                    <li class="med">Neat</li>
-                    <li class="med">Twig</li>
-                    <li class="low">Blade</li>
+                <h2>libraries:</h2>
+                    <li class="high"><p>jQuery</p></li>
+                    <li class="high"><p>Sass/SCSS</p></li>
+                    <li class="high"><p>Compass</p></li>
+                    <li class="high"><p>Grunt</p></li>
+                    <li class="high"><p>Twitter Bootstrap</p></li>
+                    <li class="high"><p>Bower</p></li>
+                    <li class="high"><p>Yeoman</p></li>
+                    <li class="med"><p>Bourbon</p></li>
+                    <li class="med"><p>Neat</p></li>
+                    <li class="med"><p>Twig</p></li>
+                    <li class="low"><p>Blade</p></li>
                 </ul>
 
                 <ul class="skills-list databases">
-                    <li class="high">MySQL</li>
-                    <li class="high">PostgreSQL</li>
-                    <li class="med">SQL</li>
-                    <li class="low">MongoDB</li>
+                <h2>databases:</h2>
+                    <li class="high"><p>MySQL</p></li>
+                    <li class="high"><p>PostgreSQL</p></li>
+                    <li class="med"><p>SQL</p></li>
+                    <li class="low"><p>MongoDB</p></li>
                 </ul>
 
                 <ul class="skills-list other">
-                    <li class="high">Heroku</li>
-                    <li class="high">AJAX</li>
-                    <li class="med">Adobe Photoshop</li>
-                    <li class="med">Arduino</li>
-                    <li class="med">RFID</li>
-                    <li class="low">Node.js</li>
-                    <li class="low">Raspberry Pi</li>
+                <h2>other:</h2>
+                    <li class="high"><p>Heroku</p></li>
+                    <li class="high"><p>AJAX</p></li>
+                    <li class="med"><p>Adobe Photoshop</p></li>
+                    <li class="med"><p>Arduino</p></li>
+                    <li class="med"><p>RFID</p></li>
+                    <li class="low"><p>Node.js</p></li>
+                    <li class="low"><p>Raspberry Pi</p></li>
                 </ul>
 
             </section>

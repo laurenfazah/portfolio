@@ -1,6 +1,29 @@
 .skills{
+    background: $primary;
+    color: $light;
     .skills-list{
         width: 100%;
+        li{
+            padding: 5px;
+            background: $dark;
+            opacity: .4;
+            margin-bottom: 5px;
+            &:hover{
+                opacity: 1;
+            }
+            p{
+
+            }
+            &.high{
+                width: 90%;
+            }
+            &.med{
+                width: 70%;
+            }
+            &.low{
+                width: 50%;
+            }
+        }
     }
 }
 
