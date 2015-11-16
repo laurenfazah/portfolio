@@ -70,10 +70,9 @@ $slick-opacity-not-active: 0.25 !default;
     top: 38%;
     margin-top: -10px;
     padding: 10px;
-    border: none;
+    border: 1px $primary solid;
     outline: none;
     opacity: .75;
-    // border-radius: 50%;
     z-index: 99;
     &:hover, &:focus {
         outline: none;
@@ -102,6 +101,7 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-prev {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    border-left: none;
     left: 0;
     [dir="rtl"] & {
         left: auto;
@@ -119,6 +119,7 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    border-right: none;
     right: 0;
     [dir="rtl"] & {
         left: 0;
