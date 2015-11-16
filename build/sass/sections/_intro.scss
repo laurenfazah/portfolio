@@ -21,7 +21,6 @@
                 width: 100%;
                 max-width: 300px;
                 @include transition(all .1s ease-in-out);
-                border-radius: 15px;
                 border: 3px $dark solid;
             }
             p{
