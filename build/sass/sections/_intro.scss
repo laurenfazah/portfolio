@@ -21,7 +21,9 @@
                 width: 100%;
                 max-width: 300px;
                 @include transition(all .1s ease-in-out);
-                border: 3px $dark solid;
+                border: 3px $light solid;
+                // -webkit-filter: grayscale(80%);
+                // filter: grayscale(80%);
             }
             p{
                 font-size: 10px;

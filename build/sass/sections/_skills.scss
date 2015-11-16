@@ -12,6 +12,7 @@
                 padding: 5px;
                 margin-bottom: 5px;
                 background: darken($primary, 20%);
+                @include transition(all .2s ease-in-out);
                 color: $primary;
                 p{
 

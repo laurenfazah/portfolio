@@ -40,7 +40,7 @@
     .freelance{
         div.piece{
             &.roughwood{
-                background-image: image-url('roughwood-product.png');
+                background-image: image-url('roughwood-mobile.jpg');
             }
             &.intuit{
                 background-image: image-url('');
@@ -83,22 +83,5 @@
                 background-image: image-url('arduino.png');
             }
         }
-    }
-    .personal{
-        div.piece{
-
-        }
-    }
-}
-
-@media all and(min-width:800px){
-    .portfolio{
-        // div.portfolio-carousel{
-        //     @include outer-container();
-        // }
-        // div.piece{
-        //     @include span-columns(3);
-        //     @include omega(4n);
-        // }
     }
 }

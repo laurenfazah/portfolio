@@ -158,7 +158,7 @@
                             <div class="job">
                                 <h2>Full Stack Web Developer</h2>
                                 <h3>May 2014 - Present</h3>
-                                <p>Ongoing full-stack web development on a variety of projects including blogs, ecommerce, and landing pages.</p>
+                                <p>Ongoing full-stack web development on a variety of projects including blogs, ecommerce sites, and landing pages.</p>
                             </div>
                         </div>
                     </li>

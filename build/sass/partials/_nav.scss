@@ -44,6 +44,7 @@ nav{
             width: 100px;
             margin: 0 auto;
             border-bottom: 1px $primary solid;
+            @extend %default-transition;
             &:last-child{
                 border-bottom: none;
                 margin-bottom: 0;
@@ -78,7 +79,7 @@ nav{
             opacity: 1;
             display: block;
             height: 59px;
-            padding: 10px 0;
+            padding: 5px 0;
             width: 50%;
             @include clearfix;
             position: absolute;
@@ -92,6 +93,9 @@ nav{
                 float: left;
                 &:last-child{
                     border-bottom: 1px $primary solid;
+                }
+                &:hover{
+                    border-bottom: 2px $primary solid;
                 }
                 a{
                     text-align: right;
