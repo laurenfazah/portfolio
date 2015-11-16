@@ -2,7 +2,7 @@
  * Static HTTP Server
  *
  * Create a static file server instance to serve files
- * and folder in the './public' folder
+ * and folder in the './html' folder
  */
 
 // modules
