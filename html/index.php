@@ -334,63 +334,67 @@
 
             <section id="skills" class="skills info">
 
-                <h1>in my toolbox:</h1>
+                <div class="container">
 
-                <ul class="skills-list languages">
-                <h2>languages:</h2>
-                    <li class="high"><p>JavaScript</p></li>
-                    <li class="high"><p>PHP</p></li>
-                    <li class="high"><p>Ruby</p></li>
-                    <li class="high"><p>HTML5</p></li>
-                    <li class="high"><p>CSS3</p></li>
-                    <li class="low"><p>Python</p></li>
-                </ul>
+                    <h1>in my toolbox:</h1>
 
-                <ul class="skills-list frameworks">
-                <h2>frameworks:</h2>
-                    <li class="high"><p>AngularJS</p></li>
-                    <li class="high"><p>CodeIgniter</p></li>
-                    <li class="high"><p>Rails</p></li>
-                    <li class="med"><p>Laravel</p></li>
-                    <li class="med"><p>Express</p></li>
-                    <li class="med"><p>Backbone</p></li>
-                    <li class="med"><p>Craft</p></li>
-                    <li class="low"><p>WordPress</p></li>
-                </ul>
+                    <ul class="skills-list languages">
+                    <h2>languages:</h2>
+                        <li class="high"><p>JavaScript</p></li>
+                        <li class="high"><p>PHP</p></li>
+                        <li class="high"><p>Ruby</p></li>
+                        <li class="high"><p>HTML5</p></li>
+                        <li class="high"><p>CSS3</p></li>
+                        <li class="low"><p>Python</p></li>
+                    </ul>
 
-                <ul class="skills-list libraries">
-                <h2>libraries:</h2>
-                    <li class="high"><p>jQuery</p></li>
-                    <li class="high"><p>Sass/SCSS</p></li>
-                    <li class="high"><p>Compass</p></li>
-                    <li class="high"><p>Grunt</p></li>
-                    <li class="high"><p>Twitter Bootstrap</p></li>
-                    <li class="high"><p>Bower</p></li>
-                    <li class="high"><p>Yeoman</p></li>
-                    <li class="med"><p>Bourbon</p></li>
-                    <li class="med"><p>Neat</p></li>
-                    <li class="med"><p>Twig</p></li>
-                    <li class="low"><p>Blade</p></li>
-                </ul>
+                    <ul class="skills-list frameworks">
+                    <h2>frameworks:</h2>
+                        <li class="high"><p>AngularJS</p></li>
+                        <li class="high"><p>CodeIgniter</p></li>
+                        <li class="high"><p>Rails</p></li>
+                        <li class="med"><p>Laravel</p></li>
+                        <li class="med"><p>Express</p></li>
+                        <li class="med"><p>Backbone</p></li>
+                        <li class="med"><p>Craft</p></li>
+                        <li class="low"><p>WordPress</p></li>
+                    </ul>
 
-                <ul class="skills-list databases">
-                <h2>databases:</h2>
-                    <li class="high"><p>MySQL</p></li>
-                    <li class="high"><p>PostgreSQL</p></li>
-                    <li class="med"><p>SQL</p></li>
-                    <li class="low"><p>MongoDB</p></li>
-                </ul>
+                    <ul class="skills-list libraries">
+                    <h2>libraries:</h2>
+                        <li class="high"><p>jQuery</p></li>
+                        <li class="high"><p>Sass/SCSS</p></li>
+                        <li class="high"><p>Compass</p></li>
+                        <li class="high"><p>Grunt</p></li>
+                        <li class="high"><p>Twitter Bootstrap</p></li>
+                        <li class="high"><p>Bower</p></li>
+                        <li class="high"><p>Yeoman</p></li>
+                        <li class="med"><p>Bourbon</p></li>
+                        <li class="med"><p>Neat</p></li>
+                        <li class="med"><p>Twig</p></li>
+                        <li class="low"><p>Blade</p></li>
+                    </ul>
 
-                <ul class="skills-list other">
-                <h2>other:</h2>
-                    <li class="high"><p>Heroku</p></li>
-                    <li class="high"><p>AJAX</p></li>
-                    <li class="med"><p>Adobe Photoshop</p></li>
-                    <li class="med"><p>Arduino</p></li>
-                    <li class="med"><p>RFID</p></li>
-                    <li class="low"><p>Node.js</p></li>
-                    <li class="low"><p>Raspberry Pi</p></li>
-                </ul>
+                    <ul class="skills-list databases">
+                    <h2>databases:</h2>
+                        <li class="high"><p>MySQL</p></li>
+                        <li class="high"><p>PostgreSQL</p></li>
+                        <li class="med"><p>SQL</p></li>
+                        <li class="low"><p>MongoDB</p></li>
+                    </ul>
+
+                    <ul class="skills-list other">
+                    <h2>other:</h2>
+                        <li class="high"><p>Heroku</p></li>
+                        <li class="high"><p>AJAX</p></li>
+                        <li class="med"><p>Adobe Photoshop</p></li>
+                        <li class="med"><p>Arduino</p></li>
+                        <li class="med"><p>RFID</p></li>
+                        <li class="low"><p>Node.js</p></li>
+                        <li class="low"><p>Raspberry Pi</p></li>
+                    </ul>
+
+                </div>
 
             </section>
 
