@@ -44,9 +44,6 @@ nav{
             width: 100px;
             margin: 0 auto;
             border-bottom: 1px $primary solid;
-            &:first-child{
-                display: none;
-            }
             &:last-child{
                 border-bottom: none;
                 margin-bottom: 0;
@@ -91,11 +88,8 @@ nav{
                 top: 0;
             }
             li{
-                width: 25%;
+                width: 20%;
                 float: left;
-                &:first-child{
-                    display: block;
-                }
                 &:last-child{
                     border-bottom: 1px $primary solid;
                 }

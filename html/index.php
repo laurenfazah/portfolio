@@ -60,6 +60,7 @@
                 <li class="scroll-to"><a href="#intro">intro</a></li>
                 <li class="scroll-to"><a href="#work">work history</a></li>
                 <li class="scroll-to"><a href="#portfolio">portfolio</a></li>
+                <li class="scroll-to"><a href="#skills">skills</a></li>
                 <li class="scroll-to"><a href="#contact">contact</a></li>
             </ul>
         </nav>
@@ -328,6 +329,66 @@
                         </div> -->
                     </div>
                 </div>
+
+            </section>
+
+            <section id="skills" class="skills">
+<!--             Languages: JavaScript, PHP, Ruby, HTML5, CSS3, Python
+Frameworks: AngularJS, Laravel, Codeigniter, Rails, Express, Backbone, Craft, WordPress
+Libraries: jQuery, Compass, Grunt, SASS, Twitter Bootstrap, Blade, Twig, Bower, Yeoman
+Databases: SQL, MySQL, PostgreSQL, MongoDB
+Other: Git, Node.js Adobe Photoshop, Heroku, AJAX, Arduino, RFID -->
+
+                <ul class="skills-list languages">
+                    <li class="high">JavaScript</li>
+                    <li class="high">PHP</li>
+                    <li class="high">Ruby</li>
+                    <li class="high">HTML5</li>
+                    <li class="high">CSS3</li>
+                    <li class="low">Python</li>
+                </ul>
+
+                <ul class="skills-list frameworks">
+                    <li class="high">AngularJS</li>
+                    <li class="high">CodeIgniter</li>
+                    <li class="high">Rails</li>
+                    <li class="med">Laravel</li>
+                    <li class="med">Express</li>
+                    <li class="med">Backbone</li>
+                    <li class="med">Craft</li>
+                    <li class="low">WordPress</li>
+                </ul>
+
+                <ul class="skills-list libraries">
+                    <li class="high">jQuery</li>
+                    <li class="high">Sass/SCSS</li>
+                    <li class="high">Compass</li>
+                    <li class="high">Grunt</li>
+                    <li class="high">Twitter Bootstrap</li>
+                    <li class="high">Bower</li>
+                    <li class="high">Yeoman</li>
+                    <li class="med">Bourbon</li>
+                    <li class="med">Neat</li>
+                    <li class="med">Twig</li>
+                    <li class="low">Blade</li>
+                </ul>
+
+                <ul class="skills-list databases">
+                    <li class="high">MySQL</li>
+                    <li class="high">PostgreSQL</li>
+                    <li class="med">SQL</li>
+                    <li class="low">MongoDB</li>
+                </ul>
+
+                <ul class="skills-list other">
+                    <li class="high">Heroku</li>
+                    <li class="high">AJAX</li>
+                    <li class="med">Adobe Photoshop</li>
+                    <li class="med">Arduino</li>
+                    <li class="med">RFID</li>
+                    <li class="low">Node.js</li>
+                    <li class="low">Raspberry Pi</li>
+                </ul>
 
             </section>
 

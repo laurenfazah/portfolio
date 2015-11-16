@@ -1,0 +1,17 @@
+.skills{
+    .skills-list{
+        width: 100%;
+    }
+}
+
+@media all and(min-width:800px){
+    .skills{
+        width: 80%;
+        margin: 0 auto;
+        @include clearfix;
+        .skills-list{
+            float: left;
+            width: 20%;
+        }
+    }
+}
