@@ -10,6 +10,12 @@ $(function(){
         $('nav').on('click', function(){
             $('nav ul').toggleClass('active');
         });
+    } else {
+        $('nav .burger').on('click', function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        });
     }
 
     var closeMenu = function(){
