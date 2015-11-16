@@ -31,6 +31,7 @@
             width: 80%;
             margin: 0 auto;
             p{
+                line-height: 20px;
                 @extend %default-transition;
             }
         }

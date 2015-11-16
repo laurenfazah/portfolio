@@ -332,13 +332,9 @@
 
             </section>
 
-            <section id="skills" class="skills">
-<!--             Languages: JavaScript, PHP, Ruby, HTML5, CSS3, Python
-Frameworks: AngularJS, Laravel, Codeigniter, Rails, Express, Backbone, Craft, WordPress
-Libraries: jQuery, Compass, Grunt, SASS, Twitter Bootstrap, Blade, Twig, Bower, Yeoman
-Databases: SQL, MySQL, PostgreSQL, MongoDB
-Other: Git, Node.js Adobe Photoshop, Heroku, AJAX, Arduino, RFID -->
+            <section id="skills" class="skills info">
 
+                <h1>in my toolbox:</h1>
                 <ul class="skills-list languages">
                     <li class="high">JavaScript</li>
                     <li class="high">PHP</li>
