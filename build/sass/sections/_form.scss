@@ -11,6 +11,9 @@
             color: $primary;
         }
         input, textarea{
+            font-family: $helvetica;
+            font-weight: 200;
+            font-size: 12px;
             display: block;
             width: 80%;
             max-width: 600px;
