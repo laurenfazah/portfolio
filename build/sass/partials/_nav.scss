@@ -4,26 +4,35 @@ nav{
     width: 100%;
     background: $dark;
     color: $light;
+    height: $header-height;
+    z-index: 9999;
+    @extend %default-transition;
     .burger{
         display: block;
         height: $header-height;
+        background: $dark;
         width: 100%;
-        z-index: 2;
-        object{
-            z-index: -1;
+        overflow: hidden;
+        img{
             height: 40px;
+            border: 1px $primary solid;
             width: 40px;
             @extend %absolute-middle;
+            @extend %default-transition;
         }
     }
     ul{
+        @extend %default-transition;
+        opacity: .95;
         background: $dark;
         width: 100%;
-        position: fixed;
-        display: none;
+        position: absolute;
         text-align: center;
+        overflow: hidden;
+        top: -500px;
+        z-index: -1;
         &.active{
-            display: block;
+            top: $header-height;
             li{
                 &:last-child{
                     margin-bottom: 20px;
@@ -35,12 +44,21 @@ nav{
             width: 100px;
             margin: 0 auto;
             border-bottom: 1px $primary solid;
-            &:first-child{
-                display: none;
-            }
+            @extend %default-transition;
             &:last-child{
                 border-bottom: none;
                 margin-bottom: 0;
+            }
+            &.logo img{
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                vertical-align: middle;
+                border: 1px $primary solid;
+            }
+            a{
+                text-decoration: none;
+                color: $light;
             }
         }
     }
@@ -49,21 +67,50 @@ nav{
 @media all and(min-width: 800px) {
     nav{
         .burger{
-            display: none;
+            width: 20%;
+            img{
+                cursor: pointer;
+                position: absolute;
+                top: 30px;
+                left: 60px;
+            }
         }
         ul{
+            opacity: 1;
             display: block;
-            height: $header-height;
+            height: 59px;
+            padding: 5px 0;
+            width: 50%;
             @include clearfix;
+            position: absolute;
+            top: 0;
+            right: 0;
+            &.active{
+                top: 0;
+            }
             li{
-                width: 25%;
+                width: 20%;
                 float: left;
-                &:first-child{
-                    display: block;
-                    border-bottom: none;
-                }
                 &:last-child{
                     border-bottom: 1px $primary solid;
+                }
+                &:hover{
+                    border-bottom: 2px $primary solid;
+                }
+                a{
+                    text-align: right;
+                }
+            }
+        }
+        &.splash{
+            height: 100px;
+            ul{
+                margin-top: 30px;
+            }
+            .burger{
+                img{
+                    @include size(60px);
+                    top: 50px;
                 }
             }
         }

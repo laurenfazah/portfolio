@@ -19,9 +19,9 @@ $linkedin: #3574af;
 $light:#fff;
 $dark: #231f20;
 $primary: #00AE8F;
-// $gold: #a08958;
 $accent: #cbc8c7;
 
+$gold: #a08958;
 $red: #800000;
 $blue: #008080;
 
@@ -32,18 +32,33 @@ $font-sans: $helvetica;
 $font-serif: 'Crimson Sans', $georgia;
 
 h1,h2,h3,h4,h5,h6{
-    font-weight:700;
+    font-weight:100;
 }
 
-p, li{
-    font-size: 16px;
-    line-height: 20px;
+p, a{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 200 !important;
 }
 
 h1{
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
 }
+
+h2{
+    font-size: 22px;
+    line-height: 30px;
+}
+
+h3{
+    font-size: 18px;
+    line-height: 26px;
+}
+
 
 *{
     &::selection {
@@ -131,6 +146,12 @@ button,input[type="submit"]{
     @include transition(all .3s ease-in-out);
 }
 
+%opacity-transition{
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
 %middle{
     @include position(relative, 50% auto auto auto);
     @include transform(translateY(-50%));
@@ -160,6 +181,24 @@ button,input[type="submit"]{
     display:block;
 }
 
+%scrollbar{
+    &::-webkit-scrollbar {
+        background-color:$accent;
+        border-radius: 50px;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track  {
+        background-color: $accent;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color:$accent;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: $accent;
+    }
+}
 
 body,html{
     display:block;

@@ -1,0 +1,98 @@
+.resume{
+    background: $light;
+    ul{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .card{
+        width:100%;
+        margin-bottom: 15px;
+        display: block;
+        height: 300px;
+        .content{
+            margin-bottom: 15px;
+            border-bottom: 4px $primary solid;
+            background: $accent;
+            color: $light;
+            padding: 20px;
+            position: relative;
+            &.front{
+                .main-info{
+                    @extend %absolute-middle;
+                    text-transform: lowercase;
+                    text-align: center;
+                    p{
+                        font-size: 3em;
+                        line-height: 28px;
+                        letter-spacing: -1px;
+                        margin-bottom: 10px;
+                    }
+                    .location{
+                        font-weight: 100;
+                    }
+                }
+                &:after{
+                    content: url("../img/round-info.svg");
+                    @include size(25px);
+                    @extend %default-transition;
+                    display: block;
+                    z-index: 9;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    opacity: .5;
+                }
+                &:hover{
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+            &.back{
+                overflow-y: scroll;
+                @extend %scrollbar;
+                h1{
+                    margin-bottom: 15px;
+                }
+                .location{
+                    text-align: right;
+                    margin-bottom: 15px;
+                }
+                .job{
+                    margin-bottom: 15px;
+                    a{
+                        color: $light;
+                    }
+                }
+                &:after{
+                    content: url("../img/close_x.svg");
+                    @include size(32px);
+                    @extend %default-transition;
+                    display: block;
+                    z-index: 9;
+                    position: fixed;
+                    top: 6px;
+                    right: 6px;
+                    opacity: .5;
+                }
+                &:hover{
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and(min-width:800px){
+    .resume{
+        ul{
+            @include outer-container();
+        }
+        .card{
+            @include span-columns(6);
+            @include omega(2n);
+        }
+    }
+}

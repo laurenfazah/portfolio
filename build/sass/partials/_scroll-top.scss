@@ -1,0 +1,22 @@
+// scroll arrow fixed to page
+.scroll-to.top{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background: $primary;
+    opacity: 0;
+    padding: 7px 10px;
+    @extend %opacity-transition;
+    img{
+        @include size(20px);
+        @include transform(rotate(90deg));
+    }
+    display: none;
+}
+
+@media all and(min-width: 800px){
+    .scroll-to.top{
+        display: block;
+        cursor: pointer;
+    }
+}

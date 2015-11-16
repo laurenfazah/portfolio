@@ -1,0 +1,70 @@
+.skills{
+    background: $primary;
+    color: $light;
+    padding-bottom: 80px !important;
+    .container{
+        .skills-list{
+            width: 100%;
+            h2{
+                margin: 10px 0;
+            }
+            li{
+                padding: 5px;
+                margin-bottom: 5px;
+                background: darken($primary, 20%);
+                @include transition(all .2s ease-in-out);
+                color: $primary;
+                p{
+
+                }
+                &.high{
+                    width: 100%;
+                }
+                &.med{
+                    display: none;
+                }
+                &.low{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and(min-width:800px){
+    .skills{
+        @include clearfix;
+        .container{
+            width: 95%;
+            margin: 0 auto;
+            .skills-list{
+                float: left;
+                width: 20%;
+                li{
+                    background: $dark;
+                    opacity: .4;
+                    &:hover{
+                        opacity: 1;
+                        p{
+                            color: $light;
+                        }
+                    }
+                    &.high{
+                        width: 90%;
+                        padding: 10px;
+                    }
+                    &.med{
+                        width: 70%;
+                        display: block;
+                        padding: 8px;
+                    }
+                    &.low{
+                        width: 50%;
+                        display: block;
+                        padding: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

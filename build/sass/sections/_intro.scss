@@ -1,0 +1,96 @@
+#intro{
+    padding-top: 30px;
+    min-height: 90vh;
+    background: $primary;
+    @include transition(all .66s ease-in-out);
+    h1{
+        color: $light;
+        margin-bottom: 0px;
+    }
+    p{
+        margin-bottom: 20px;
+        color: $light;
+    }
+    .who{
+        width: 100%;
+        text-align: center;
+        .left{
+            width: 100%;
+            padding: 5%;
+            img{
+                width: 100%;
+                max-width: 300px;
+                @include transition(all .1s ease-in-out);
+                border: 3px $light solid;
+                // -webkit-filter: grayscale(80%);
+                // filter: grayscale(80%);
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        .right{
+            width: 80%;
+            margin: 0 auto;
+            p{
+                line-height: 20px;
+                @extend %default-transition;
+            }
+        }
+    }
+    // ul.slick-slider{
+    //     padding-top: 20px;
+    //     padding-bottom: 20px;
+    //     height: 60px;
+    //     li{
+    //         &.slick-slide{
+    //             outline: none;
+    //             overflow: hidden;
+    //             p{
+    //                 width: 60%;
+    //                 text-align: center;
+    //                 margin: 0 auto;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+@media all and(min-width: 800px){
+    #intro{
+        min-height: 60vh;
+        .who{
+            width: 80%;
+            padding: 60px 0;
+            margin: 0 auto;
+            @include clearfix;
+            h1{
+                margin-bottom: 30px;
+            }
+            .left{
+                float: left;
+                width: 40%;
+                padding: 0;
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+            }
+            .right{
+                text-align: left;
+                float: left;
+                width: 60%;
+                padding-left: 20px;
+            }
+        }
+        // ul.slick-slider{
+        //     width: 400px;
+        //     margin: 0 auto;
+        //     li{
+        //         &.slick-slide{
+        //             margin: 0 auto;
+        //         }
+        //     }
+        // }
+    }
+}

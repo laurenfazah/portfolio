@@ -4,7 +4,14 @@
 @import 'partials/body';
 @import 'partials/nav';
 @import 'partials/header';
-@import 'partials/form';
 @import 'partials/footer';
+@import 'partials/scroll-top';
+@import 'partials/click-thru';
 
-@import 'partials/coming-soon';
+@import 'sections/intro';
+@import 'sections/resume';
+@import 'sections/portfolio';
+@import 'sections/skills';
+@import 'sections/form';
+
+// @import 'sections/coming-soon';

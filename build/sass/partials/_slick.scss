@@ -2,8 +2,8 @@
 
 // Default Variables
 
-$slick-font-path: "./fonts/" !default;
-$slick-font-family: "slick" !default;
+// $slick-font-path: "./fonts/" !default;
+// $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
 $slick-dot-color: black !default;
@@ -25,33 +25,33 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-@function slick-font-url($url) {
-    @if function-exists(font-url) {
-        @return font-url($url);
-    }
-    @else {
-        @return url($slick-font-path + $url);
-    }
-}
+// @function slick-font-url($url) {
+//     @if function-exists(font-url) {
+//         @return font-url($url);
+//     }
+//     @else {
+//         @return url($slick-font-path + $url);
+//     }
+// }
 
 /* Slider */
 
 .slick-list {
     .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+        background: #fff;
     }
 }
 
 /* Icons */
-@if $slick-font-family == "slick" {
-    @font-face {
-        font-family: "slick";
-        src: slick-font-url("slick.eot");
-        src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
-        font-weight: normal;
-        font-style: normal;
-    }
-}
+// @if $slick-font-family == "slick" {
+//     @font-face {
+//         font-family: "slick";
+//         src: slick-font-url("slick.eot");
+//         src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+//         font-weight: normal;
+//         font-style: normal;
+//     }
+// }
 
 /* Arrows */
 
@@ -59,22 +59,25 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 40px;
+    height: 15%;
     width: 40px;
-    // line-height: 0px;
+    line-height: 0px;
     font-size: 0px;
     cursor: pointer;
     background: $dark;
+    @extend %default-transition;
     color: $primary;
-    top: 50%;
+    top: 38%;
     margin-top: -10px;
     padding: 10px;
-    border: none;
+    border: 1px $primary solid;
     outline: none;
-    border-radius: 50%;
+    opacity: .75;
+    z-index: 99;
     &:hover, &:focus {
         outline: none;
         background: darken($dark, 20%);
+        cursor: pointer;
         color: transparent;
         &:before {
             opacity: $slick-opacity-on-hover;
@@ -86,7 +89,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: $slick-font-family;
+    // font-family: $slick-font-family;
     font-size: 20px;
     line-height: 1;
     color: $slick-arrow-color;
@@ -96,6 +99,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: none;
     left: 0;
     [dir="rtl"] & {
         left: auto;
@@ -111,6 +117,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-right: none;
     right: 0;
     [dir="rtl"] & {
         left: 0;
@@ -172,7 +181,7 @@ $slick-opacity-not-active: 0.25 !default;
                 content: $slick-dot-character;
                 width: 20px;
                 height: 20px;
-                font-family: $slick-font-family;
+                // font-family: $slick-font-family;
                 font-size: $slick-dot-size;
                 line-height: 20px;
                 text-align: center;

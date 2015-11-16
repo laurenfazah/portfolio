@@ -1,0 +1,18 @@
+.click-thru {
+    @include clearfix;
+    p{
+        float: left;
+    }
+    .link-icon{
+        @include size(25px);
+        @extend %default-transition;
+        margin-left: 5px;
+        opacity: .4;
+        float: left;
+    }
+    &:hover{
+        .link-icon{
+            opacity: 1;
+        }
+    }
+}
