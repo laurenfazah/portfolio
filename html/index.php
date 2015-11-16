@@ -263,7 +263,7 @@
                                     <p class="title">Adcademy</p>
                                 </a>
                                 <p class="role">Sole Developer</p>
-                                <p class="description">An internal training portal for Hill Holliday with PHP's Codeigniter.</p>
+                                <p class="description">An internal training portal for Hill Holliday built with PHP's Codeigniter.</p>
                             </div>
                         </div>
                         <div class="piece rfid">

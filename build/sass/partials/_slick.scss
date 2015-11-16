@@ -59,14 +59,14 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 40px;
+    height: 15%;
     width: 40px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
     background: $dark;
     color: $primary;
-    top: 50%;
+    top: 38%;
     margin-top: -10px;
     padding: 10px;
     border: none;
@@ -99,6 +99,8 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     left: 0;
     [dir="rtl"] & {
         left: auto;
@@ -114,6 +116,8 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     right: 0;
     [dir="rtl"] & {
         left: 0;

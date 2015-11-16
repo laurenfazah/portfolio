@@ -5,10 +5,10 @@
     right: 50px;
     background: $primary;
     opacity: 0;
-    padding: 5px 10px;
+    padding: 7px 10px;
     @extend %opacity-transition;
     img{
-        @include size(25px);
+        @include size(20px);
         @include transform(rotate(90deg));
     }
     display: none;
