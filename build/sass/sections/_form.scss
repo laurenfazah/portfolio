@@ -19,9 +19,9 @@
             padding: 10px;
             border: none;
             border-bottom: 1px $accent solid;
-            transition: border 0.3s;
+            @extend %default-transition;
             &:focus{
-                border-bottom: 4px darken($accent, 50%) solid;
+                border-bottom: 4px $accent solid;
             }
         }
         input{

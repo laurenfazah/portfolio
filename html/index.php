@@ -213,7 +213,7 @@
                                     <p class="title">StoryMaker</p>
                                 </a>
                                 <p class="role">Sole Developer</p>
-                                <p class="description"></p>
+                                <p class="description">Built this AngularJS app to give my mother's written bedtime stories an interactive mad-libs-style place to live.</p>
                             </div>
                         </div>
       <!--                   <div class="piece pixelect">
@@ -231,7 +231,7 @@
                                     <p class="title">Selfless</p>
                                 </a>
                                 <p class="role">Sole Developer</p>
-                                <p class="description"></p>
+                                <p class="description">This app was entirely built with Ruby on Rails, integrating Twilio's API.</p>
                             </div>
                         </div>
                         <div class="piece tic-tac-toe">
@@ -240,7 +240,7 @@
                                     <p class="title">Tic Tac Toe</p>
                                 </a>
                                 <p class="role">Sole Developer</p>
-                                <p class="description"></p>
+                                <p class="description">Classic game interaction built with jQuery.</p>
                             </div>
                         </div>
                        <!--  <div class="piece video-interaction">
@@ -262,7 +262,23 @@
                                     <p class="title">Adcademy</p>
                                 </a>
                                 <p class="role">Sole Developer</p>
-                                <p class="description">Built this internal training portal for Hill Holliday with a PHP backend, MySQL database, and Twitter Bootstrapped front-end</p>
+                                <p class="description">An internal training portal for Hill Holliday with PHP's Codeigniter.</p>
+                            </div>
+                        </div>
+                        <div class="piece rfid">
+                            <div class="info">
+                                <p class="title">RFID Scanner with API</p>
+                                <p class="role">Sole Developer</p>
+                                <p class="description">Developed an Arduino prototype in C that reads RFID card information and speaks to a custom inventory API built with PHP's Laravel.</p>
+                            </div>
+                        </div>
+                        <div class="piece tvnext">
+                            <div class="info">
+                                <a href="http://tvnext.com" target="_blank" class="click-thru title">
+                                    <p class="title">TVnext Companion Site</p>
+                                </a>
+                                <p class="role">Front-End Developer</p>
+                                <p class="description">Built the day-of <a href="http://tvnext.com/index2" target="_blank">Companion</a> site for the 2015 TVnext conference with Craft's CMS.</p>
                             </div>
                         </div>
                         <div class="piece www">
@@ -272,6 +288,24 @@
                                 </a>
                                 <p class="role">Sole Developer</p>
                                 <p class="description">Wordpress blog built for the Whole World Water charity organization.</p>
+                            </div>
+                        </div>
+                        <div class="piece hhcc-app">
+                            <div class="info">
+                                <a href="http://hhcc.com/app/" target="_blank" class="click-thru title">
+                                    <p class="title">Hill Holliday App Landing Page</p>
+                                </a>
+                                <p class="role">Sole Developer</p>
+                                <p class="description">This page was built to announce the company's iOS app to all employees as well as provide installation support.</p>
+                            </div>
+                        </div>
+                        <div class="piece passion">
+                            <div class="info">
+                                <a href="http://passiontoprotect.libertymutualgroup.com/" target="_blank" class="click-thru title">
+                                    <p class="title">Passion to Protect</p>
+                                </a>
+                                <p class="role">Front-End Developer</p>
+                                <p class="description">My role with this project has been both front-end and back-end bug fixes, feature built-outs, and brand updates.</p>
                             </div>
                         </div>
 <!--                         <div class="piece brandfeed">
@@ -292,40 +326,6 @@
                                 <p class="description"></p>
                             </div>
                         </div> -->
-                        <div class="piece hhcc-app">
-                            <div class="info">
-                                <a href="http://hhcc.com/app/" target="_blank" class="click-thru title">
-                                    <p class="title">Hill Holliday App Landing Page</p>
-                                </a>
-                                <p class="role">Sole Developer</p>
-                                <p class="description">to announce the company's iOS app</p>
-                            </div>
-                        </div>
-                        <div class="piece passion">
-                            <div class="info">
-                                <a href="http://passiontoprotect.libertymutualgroup.com/" target="_blank" class="click-thru title">
-                                    <p class="title">Passion to Protect</p>
-                                </a>
-                                <p class="role">Front-End Developer</p>
-                                <p class="description"></p>
-                            </div>
-                        </div>
-                        <div class="piece tvnext">
-                            <div class="info">
-                                <a href="http://tvnext.com" target="_blank" class="click-thru title">
-                                    <p class="title">TVnext Companion Site</p>
-                                </a>
-                                <p class="role">Front-End Developer</p>
-                                <p class="description">Built the day-of <a href="http://tvnext.com/index2" target="_blank">Companion</a> site for the 2015 TVnext conference on a Craft CMS</p>
-                            </div>
-                        </div>
-                        <div class="piece rfid">
-                            <div class="info">
-                                <p class="title">RFID Scanner with API</p>
-                                <p class="role">Sole Developer</p>
-                                <p class="description"></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
