@@ -56,7 +56,6 @@
                 <img src="img/logo.svg" alt="">
             </div>
             <ul>
-                <!-- <li class="logo"><img src="img/logo.svg" alt="logo"></li> -->
                 <li class="scroll-to"><a href="#intro">intro</a></li>
                 <li class="scroll-to"><a href="#work">work history</a></li>
                 <li class="scroll-to"><a href="#portfolio">portfolio</a></li>
@@ -79,25 +78,14 @@
                         <p><i>(other than a pitchfork-wielding caffeine addict)</i></p>
                     </div>
                     <div class="right">
-                        <p>Recently I realized 2 major career pieces missing from my space - creativity and continued learning.</p>
-                        <p>I spent the majority of my life dreaming of a career in international politics - a life of travel, cuture, and beaurocracy.</p>
+                        <p>Recently, I've realized 2 major aspects of a career - creativity and continued learning.</p>
+                        <p>After realizing I wasn't going to find these in the career path I'd been on</p>
                         <p>Once I realized my passion for web development, everything quickly fell in place. My favorite aspect of development is its community of learning. My education in development came from a full-time bootcamp in Boston, which I have been ever grateful for.</p>
                         <p>I cherish this community and try to stay involved as much as I can to push forward this momentum of encouraging others to take the plunge into development as well.</p>
                     </div>
                 </div>
 
-<!-- save for others section: -->
-
-<!--                 <div class="fun-facts">
-                    <h1>a few fun facts about me:</h1>
-                    <ul class="slick-it">
-                        <li><p>first paid rent in belgrade, serbia</p></li>
-                        <li><p>conversational in french and arabic</p></li>
-                        <li><p>enjoys vegan cooking</p></li>
-                        <li><p>not vegan</p></li>
-                    </ul>
-                </div> -->
-
+                <!-- save for others section: -->
                 <!-- article mentions -->
                 <!-- http://www.boston.com/jobs/news/2015/03/08/what-like-woman-where-you-work/qWXwqrUNEixEyXWYBXaEAP/pictures.html#slide-1 -->
                 <!-- http://www.boston.com/jobs/news/2015/03/09/advice-for-women-looking-break-into-the-tech-field/tVPJG1x1UhKcWzU0GoihNI/story.html -->
@@ -201,13 +189,6 @@
                                 <p class="description">Co-built this private ecommerce site with an AngularJS front end making API calls to Springboard and Auth0.</p>
                             </div>
                         </div>
-<!--                         <div class="piece intuit">
-                            <div class="info">
-                                <p class="title">Intuit</p>
-                                <p class="role">Sole Developer</p>
-                                <p class="description">Built multiple landing pages for this company</p>
-                            </div>
-                        </div> -->
                         <div class="piece storymaker">
                             <div class="info">
                                 <a href="http://laurenfazah.github.io/storymaker/" target="_blank" class="click-thru title">
@@ -217,15 +198,6 @@
                                 <p class="description">Built this AngularJS app to give my mother's written bedtime stories an interactive mad-libs-style place to live.</p>
                             </div>
                         </div>
-      <!--                   <div class="piece pixelect">
-        <div class="info">
-                                <a href="http://billy1339.github.io/pixelect_client2/" target="_blank" class="click-thru title">
-                                    <p class="title">Pixelect</p>
-                                </a>
-                                <p class="role">Lead HTML/CSS Developer</p>
-                                <p class="description"></p>
-                            </div>
-                        </div> -->
                         <div class="piece selfless">
                             <div class="info">
                                 <a href="http://selflessapp.herokuapp.com/" target="_blank" class="click-thru title">
@@ -244,11 +216,11 @@
                                 <p class="description">Classic game interaction built with jQuery.</p>
                             </div>
                         </div>
-                       <!--  <div class="piece video-interaction">
-                        <div class="info">
-                                <p>2024 Video Interaction</p>
+                        <!--                         <div class="piece intuit">
+                            <div class="info">
+                                <p class="title">Intuit</p>
                                 <p class="role">Sole Developer</p>
-                                <p class="description"></p>
+                                <p class="description">Built multiple landing pages for this company</p>
                             </div>
                         </div> -->
                     </div>
@@ -419,10 +391,6 @@
             <p>built with love by lauren fazah</p>
             <p>&copy; 2015 boston, ma</p>
         </footer>
-
-        <script>
-            // google analytics
-        </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery.js"><\/script>')</script>

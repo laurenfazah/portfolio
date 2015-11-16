@@ -65,6 +65,7 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 0px;
     cursor: pointer;
     background: $dark;
+    @extend %default-transition;
     color: $primary;
     top: 38%;
     margin-top: -10px;
