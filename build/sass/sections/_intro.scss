@@ -1,86 +1,93 @@
-.introduction{
-    min-height: 60vh;
+#intro{
+    padding-top: 30px;
+    min-height: 90vh;
     background: $primary;
-    padding-top: $header-height;
     @include transition(all .66s ease-in-out);
     h1{
         color: $light;
+        margin-bottom: 0px;
     }
     p{
-        margin-top: 20px;
+        margin-bottom: 20px;
         color: $light;
     }
     .who{
         width: 100%;
-        padding-bottom:40px;
-        @include clearfix;
-        h1{
-            display: inline-block;
-        }
-        img{
-            @include size(25px);
-            margin-top: 5px;
-            display: inline-block;
-            float: right;
-            @include transform(rotate(-90deg));
-            @include transition(all .1s ease-in-out);
-            // @extend %default-transition;
-            &.face-up{
-                @include transform(rotate(90deg));
+        text-align: center;
+        .left{
+            width: 100%;
+            padding: 5%;
+            img{
+                width: 100%;
+                max-width: 300px;
+                @include transition(all .1s ease-in-out);
+                border-radius: 15px;
+                border: 3px $dark solid;
+            }
+            p{
+                font-size: 10px;
             }
         }
-        p{
-            display: none;
-            @extend %default-transition;
-            &.active{
-                display: block;
-            }
-        }
-    }
-    ul.slick-slider{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        li{
-            &.slick-slide{
-                outline: none;
-                overflow: hidden;
-                p{
-                    width: 60%;
-                    text-align: center;
-                    margin: 0 auto;
-                }
+        .right{
+            width: 80%;
+            margin: 0 auto;
+            p{
+                @extend %default-transition;
             }
         }
     }
+    // ul.slick-slider{
+    //     padding-top: 20px;
+    //     padding-bottom: 20px;
+    //     height: 60px;
+    //     li{
+    //         &.slick-slide{
+    //             outline: none;
+    //             overflow: hidden;
+    //             p{
+    //                 width: 60%;
+    //                 text-align: center;
+    //                 margin: 0 auto;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media all and(min-width: 800px){
-    .introduction{
+    #intro{
         .who{
-            width: 60%;
+            width: 80%;
+            padding: 100px 0;
             margin: 0 auto;
+            @include clearfix;
             h1{
-                text-align: center;
+                margin-bottom: 30px;
             }
-            p{
-                margin: 10px auto;
-                text-align: center;
-            }
-        }
-        ul.slick-slider{
-            width: 400px;
-            margin: 0 auto;
-            li{
-                &.slick-slide{
-                    margin: 0 auto;
+            .left{
+                float: left;
+                width: 40%;
+                padding: 0;
+                img{
+                    width: 90%;
+                    height: auto;
                 }
             }
+            .right{
+                text-align: left;
+                float: left;
+                width: 60%;
+                padding-left: 20px;
+            }
         }
-        .fun-facts{
-            width: 40%;
-            margin: 0 auto;
-            margin-bottom: 100px;
-            margin-top: 50px;
-        }
+        // ul.slick-slider{
+        //     width: 400px;
+        //     margin: 0 auto;
+        //     li{
+        //         &.slick-slide{
+        //             margin: 0 auto;
+        //         }
+        //     }
+        // }
     }
 }
