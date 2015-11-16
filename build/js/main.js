@@ -45,6 +45,12 @@ $(function(){
         } else {
             $('.scroll-to.top').css('opacity', '0');
         }
+
+        if ($document.scrollTop() >= 100) {
+            $('nav').removeClass('splash');
+        } else {
+            $('nav').addClass('splash');
+        }
     });
 
 

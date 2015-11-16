@@ -6,6 +6,7 @@ nav{
     color: $light;
     height: $header-height;
     z-index: 9999;
+    @extend %default-transition;
     .burger{
         display: block;
         height: $header-height;
@@ -17,9 +18,11 @@ nav{
             border: 1px $primary solid;
             width: 40px;
             @extend %absolute-middle;
+            @extend %default-transition;
         }
     }
     ul{
+        @extend %default-transition;
         opacity: .95;
         background: $dark;
         width: 100%;
@@ -28,7 +31,6 @@ nav{
         overflow: hidden;
         top: -500px;
         z-index: -1;
-        @include transition(all .66s ease-in-out);
         &.active{
             top: $header-height;
             li{
@@ -67,29 +69,50 @@ nav{
 @media all and(min-width: 800px) {
     nav{
         .burger{
-            display: none;
+            // display: none;
+            width: 20%;
+            img{
+                position: absolute;
+                top: 30px;
+                left: 60px;
+            }
         }
         ul{
             opacity: 1;
             display: block;
-            top: 0;
+            height: 59px;
             padding: 10px 0;
+            width: 40%;
             @include clearfix;
+            position: absolute;
+            top: 0;
+            right: 0;
             &.active{
                 top: 0;
             }
             li{
-                width: 20%;
+                width: 25%;
                 float: left;
                 &:first-child{
                     display: block;
-                    border-bottom: none;
                 }
                 &:last-child{
                     border-bottom: 1px $primary solid;
                 }
                 a{
                     text-align: right;
+                }
+            }
+        }
+        &.splash{
+            height: 100px;
+            ul{
+                margin-top: 30px;
+            }
+            .burger{
+                img{
+                    @include size(60px);
+                    top: 50px;
                 }
             }
         }

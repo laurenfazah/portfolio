@@ -29,12 +29,12 @@
 
     <body>
 
-        <nav id="nav">
+        <nav id="nav" class="splash">
             <div class="burger">
                 <img src="img/logo.svg" alt="">
             </div>
             <ul>
-                <li class="logo"><img src="img/logo.svg" alt="logo"></li>
+                <!-- <li class="logo"><img src="img/logo.svg" alt="logo"></li> -->
                 <li class="scroll-to"><a href="#intro">intro</a></li>
                 <li class="scroll-to"><a href="#work">work history</a></li>
                 <li class="scroll-to"><a href="#portfolio">portfolio</a></li>
@@ -82,7 +82,7 @@
             </section>
 
             <section id="work" class="resume info">
-                <h1>been places</h1>
+                <h1>a little background:</h1>
                 <ul>
                     <li class="card">
                         <div class="content front">
@@ -193,7 +193,7 @@
             <section id="portfolio" class="portfolio info">
 
                 <div class="freelance">
-                    <h1>in my "free" time</h1>
+                    <h1>in my free time:</h1>
                     <div class="portfolio-carousel">
                         <div class="piece roughwood">
                             <div class="info">
@@ -248,7 +248,7 @@
                 </div>
 
                 <div class="career">
-                    <h1>on the job</h1>
+                    <h1>on the job:</h1>
                     <div class="portfolio-carousel">
                         <div class="piece training-portal">
                             <div class="info">
