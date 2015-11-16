@@ -39,7 +39,7 @@ main {
         @include size(25px);
         @extend %default-transition;
         margin-left: 5px;
-        opacity: .5;
+        opacity: .4;
         float: left;
     }
     &:hover{

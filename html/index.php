@@ -114,6 +114,7 @@
                             </div>
                         </div>
                         <div class="content back">
+                            <h1>Hill Holliday</h1>
                             <div class="job">
                                 <h2>Full Stack Web Developer</h2>
                                 <h3>January 2015 - Present</h3>
@@ -129,6 +130,7 @@
                             </div>
                         </div>
                         <div class="content back">
+                            <h1>General Assembly</h1>
                             <div class="job">
                                 <h2>TA, Front End Web Development Course</h2>
                                 <h3>September 2015 - Present</h3>
@@ -151,6 +153,7 @@
                             </div>
                         </div>
                         <div class="content back">
+                            <h1>Freelance</h1>
                             <div class="job">
                                 <h2>Full Stack Web Developer</h2>
                                 <h3>May 2014 - Present</h3>
@@ -166,6 +169,7 @@
                             </div>
                         </div>
                         <div class="content back">
+                            <h1>City Year</h1>
                             <div class="job">
                                 <h2>Special Projects Assistant to the Chief Operating Officer</h2>
                                 <h3>January 2013 - June 2014</h3>
@@ -179,36 +183,6 @@
                             </div>
                         </div>
                     </li>
-<!--                     <li class="card">
-                        <div class="content front">
-                            <div class="main-info">
-                                <p>Office of the War Crimes Prosecutor</p>
-                                <h2 class="location">Belgrade, Serbia</h2>
-                            </div>
-                        </div>
-                        <div class="content back">
-                            <div class="job">
-                                <h2>Assistant to the Chief Prosecutor</h2>
-                                <h3>September 2012 - December 2012</h3>
-                                <p>Summarized full court case transcripts for this branch of the International Criminal Tribunal for the former Yugoslavia (ICTY) and analyzed patterns in digital evidence and first-hand witness accounts of war crimes</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="content front">
-                            <div class="main-info">
-                                <p>United Nations Headquarters</p>
-                                <h2 class="location">New York City, New York</h2>
-                            </div>
-                        </div>
-                        <div class="content back">
-                            <div class="job">
-                                <h2>Meetings Services Assistant</h2>
-                                <h3>September 2011 - December 2011</h3>
-                                <p>Directly assisted all interpretation and documentation of the General Debate of the 66th session of the General Assembly</p>
-                            </div>
-                        </div>
-                    </li> -->
                 </ul>
             </section>
 
@@ -291,15 +265,6 @@
                                 <p class="description">Built this internal training portal for Hill Holliday with a PHP backend, MySQL database, and Twitter Bootstrapped front-end</p>
                             </div>
                         </div>
-                        <div class="piece tvnext">
-                            <div class="info">
-                                <a href="http://tvnext.com" target="_blank" class="click-thru title">
-                                    <p class="title">TVnext Companion Site</p>
-                                </a>
-                                <p class="role">Front-End Developer</p>
-                                <p class="description">Built the day-of <a href="http://tvnext.com/index2" target="_blank">Companion</a> site for the 2015 TVnext conference on a Craft CMS</p>
-                            </div>
-                        </div>
                         <div class="piece www">
                             <div class="info">
                                 <a href="http://wholeworldwater.org/" target="_blank" class="click-thru title">
@@ -343,6 +308,15 @@
                                 </a>
                                 <p class="role">Front-End Developer</p>
                                 <p class="description"></p>
+                            </div>
+                        </div>
+                        <div class="piece tvnext">
+                            <div class="info">
+                                <a href="http://tvnext.com" target="_blank" class="click-thru title">
+                                    <p class="title">TVnext Companion Site</p>
+                                </a>
+                                <p class="role">Front-End Developer</p>
+                                <p class="description">Built the day-of <a href="http://tvnext.com/index2" target="_blank">Companion</a> site for the 2015 TVnext conference on a Craft CMS</p>
                             </div>
                         </div>
                         <div class="piece rfid">

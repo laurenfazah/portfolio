@@ -32,7 +32,7 @@ $font-sans: $helvetica;
 $font-serif: 'Crimson Sans', $georgia;
 
 h1,h2,h3,h4,h5,h6{
-    font-weight:700;
+    font-weight:100;
 }
 
 p, a{
@@ -192,7 +192,7 @@ button,input[type="submit"]{
         border-radius: 10px;
     }
     &::-webkit-scrollbar-thumb {
-        background-color:$light;
+        background-color:$accent;
         width: 5px;
     }
     &::-webkit-scrollbar-corner {
