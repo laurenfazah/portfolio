@@ -3,7 +3,7 @@
     div.portfolio-carousel{
         margin: 0 auto;
         margin-bottom: 80px;
-        max-width: 800px !important;
+        max-width: 1000px !important;
     }
     div.piece{
         width:100%;
@@ -20,7 +20,7 @@
         @extend %default-transition;
         display: table-cell;
         vertical-align: bottom;
-        height: 500px;
+        height: 650px;
         .info{
             width: 100%;
             min-height: 20px;
