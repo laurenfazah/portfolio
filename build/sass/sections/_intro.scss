@@ -26,7 +26,7 @@
                 // filter: grayscale(80%);
             }
             p{
-                font-size: 10px;
+                font-size: 12px;
             }
         }
         .right{
@@ -65,12 +65,17 @@
             margin: 0 auto;
             @include clearfix;
             h1{
+                margin-right: 0;
+                margin-left: auto;
+                text-align: left;
                 margin-bottom: 30px;
+                width: 60%;
             }
             .left{
                 float: left;
                 width: 40%;
                 padding: 0;
+                padding-right: 20px;
                 img{
                     width: 90%;
                     height: auto;
@@ -80,7 +85,6 @@
                 text-align: left;
                 float: left;
                 width: 60%;
-                padding-left: 20px;
             }
         }
         // ul.slick-slider{
