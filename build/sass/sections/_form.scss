@@ -29,13 +29,19 @@
         }
         input{
             height: 60px;
-            &[name="submit"]{
+            &.submit{
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
-                background: $primary;
-                color:$light;
+                background: darken($primary, 10%);
+                pointer-events: none;
                 border-bottom: none;
+                color: $dark;
+                &.ready{
+                    background: $primary;
+                    pointer-events: auto;
+                    color:$light;
+                }
             }
         }
         textarea{

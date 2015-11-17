@@ -123,6 +123,22 @@ $(function(){
         setTimeout(clearForm, 250);
     });
 
+    // submit button control on form
+    $('form > .contact-input').keyup(function() {
+        var empty = false;
+        $('form > .contact-input').each(function() {
+            if ($(this).val() === '') {
+                empty = true;
+            }
+        });
+        if (empty) {
+            $('.submit').removeClass('ready');
+        } else {
+            $('.submit').addClass('ready');
+        }
+    });
+
+
     /*//////////////////////////////////////
     //  link out
     //////////////////////////////////////*/
