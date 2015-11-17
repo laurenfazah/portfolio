@@ -32,13 +32,13 @@ $font-sans: $helvetica;
 $font-serif: 'Crimson Sans', $georgia;
 
 h1,h2,h3,h4,h5,h6{
-    font-weight:100;
+    font-weight:200;
 }
 
 p, a{
     font-size: 14px;
     line-height: 22px;
-    font-weight: 200 !important;
+    font-weight: 400 !important;
 }
 
 h1{
@@ -57,6 +57,16 @@ h2{
 h3{
     font-size: 18px;
     line-height: 26px;
+}
+
+@media all and(min-width: 800px) {
+    p, a{
+        font-weight: 200 !important;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 100;
+    }
 }
 
 

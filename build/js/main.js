@@ -61,10 +61,10 @@ $(function(){
         }
     });
 
+    //active scrolling
     var sections = $('section'),
         nav = $('nav'),
         nav_height = nav.outerHeight();
-
     $(window).scroll(function() {
         if($(window).width() >= 800){
             if($(window).scrollTop() + $(window).height() === $(document).height()) {

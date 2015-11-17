@@ -1,11 +1,17 @@
 footer{
     width: 100%;
     background: $primary;
-    padding: $box-padding;
+    padding: 10px;
     p{
         color: $dark;
         text-align: right;
         font-weight: 700;
         vertical-align: baseline;
+    }
+}
+
+@media all and(min-width: 800px) {
+    footer{
+        padding: $box-padding;
     }
 }

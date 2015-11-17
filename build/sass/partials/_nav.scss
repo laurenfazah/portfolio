@@ -4,8 +4,8 @@ nav{
     width: 100%;
     background: $dark;
     color: $light;
-    height: $header-height;
     z-index: 9999;
+    height: 80px;
     @extend %default-transition;
     .burger{
         display: block;
@@ -66,6 +66,7 @@ nav{
 
 @media all and(min-width: 800px) {
     nav{
+        height: $header-height;
         .burger{
             width: 20%;
             img{
