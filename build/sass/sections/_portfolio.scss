@@ -40,47 +40,99 @@
     .freelance{
         div.piece{
             &.roughwood{
-                background-image: image-url('roughwood-mobile.png');
+                background-image: image-url('projects/mobile/roughwood-mobile.jpg');
             }
             &.intuit{
                 background-image: image-url('');
             }
             &.storymaker{
-                background-image: image-url('storymaker-story.png');
+                background-image: image-url('projects/mobile/storymaker-story.jpg');
             }
             &.selfless{
-                background-image: image-url('selfless.png');
+                background-image: image-url('projects/mobile/selfless.jpg');
             }
             &.tic-tac-toe{
-                background-image: image-url('ttt.png');
+                background-image: image-url('projects/mobile/ttt.jpg');
             }
         }
     }
     .career{
         div.piece{
             &.tvnext{
-                background-image: image-url('tvnext-companion.png');
+                background-image: image-url('projects/mobile/tvnext-companion.jpg');
             }
             &.www{
-                background-image: image-url('wholeworldwater.png');
+                background-image: image-url('projects/mobile/wholeworldwater.jpg');
             }
             &.brandfeed{
                 background-image: image-url('');
             }
             &.training-portal{
-                background-image: image-url('training-dashboard.png');
+                background-image: image-url('projects/mobile/training-dashboard.jpg');
             }
             &.onebostonday{
-                background-image: image-url('onebostonday-award.png');
+                background-image: image-url('projects/mobile/onebostonday-award.jpg');
             }
             &.hhcc-app{
-                background-image: image-url('hhcc_app-desktop.png');
+                background-image: image-url('projects/mobile/hhcc_app-desktop.jpg');
             }
             &.passion{
-                background-image: image-url('passion-poll_article.png');
+                background-image: image-url('projects/mobile/passion-poll_article.jpg');
             }
             &.rfid{
-                background-image: image-url('arduino.png');
+                background-image: image-url('projects/arduino.png');
+            }
+        }
+    }
+}
+
+@media all and(min-width:800px){
+    .portfolio{
+        .freelance{
+            div.piece{
+                &.roughwood{
+                    background-image: image-url('projects/roughwood-mobile.jpg');
+                }
+                &.intuit{
+                    background-image: image-url('');
+                }
+                &.storymaker{
+                    background-image: image-url('projects/storymaker-story.jpg');
+                }
+                &.selfless{
+                    background-image: image-url('projects/selfless.jpg');
+                }
+                &.tic-tac-toe{
+                    background-image: image-url('projects/ttt.jpg');
+                }
+            }
+        }
+        .career{
+            div.piece{
+                &.tvnext{
+                    background-image: image-url('projects/tvnext-companion.jpg');
+                }
+                &.www{
+                    background-image: image-url('projects/wholeworldwater.jpg');
+                }
+                &.brandfeed{
+                    background-image: image-url('');
+                }
+                &.training-portal{
+                    background-image: image-url('projects/training-dashboard.jpg');
+                }
+                &.onebostonday{
+                    background-image: image-url('projects/onebostonday-award.jpg');
+                }
+                &.hhcc-app{
+                    background-image: image-url('projects/hhcc_app-desktop.jpg');
+                }
+                &.passion{
+                    background-image: image-url('projects/passion-poll_article.jpg');
+                }
+                &.rfid{
+                    background-image: image-url('projects/arduino.png');
+                }
             }
         }
     }
