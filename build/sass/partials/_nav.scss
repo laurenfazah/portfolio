@@ -44,7 +44,6 @@ nav{
             width: 100px;
             margin: 0 auto;
             border-bottom: 1px $primary solid;
-            @extend %default-transition;
             &:last-child{
                 border-bottom: none;
                 margin-bottom: 0;
@@ -92,10 +91,11 @@ nav{
             li{
                 width: 20%;
                 float: left;
-                &:last-child{
-                    border-bottom: 1px $primary solid;
-                }
+                border-bottom: none;
                 &:hover{
+                    border-bottom: 2px $primary solid;
+                }
+                &.active{
                     border-bottom: 2px $primary solid;
                 }
                 a{
