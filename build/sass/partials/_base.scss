@@ -191,6 +191,40 @@ button,input[type="submit"]{
     display:block;
 }
 
+%resume-image{
+    overflow: hidden;
+    &:before{
+        content: ' ';
+        display: block;
+        @extend %middle;
+        @extend %default-transition;
+        left: 0%;
+        width: 50%;
+        height: 50%;
+        z-index: 1;
+        opacity: .05;
+        background-size: contain;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    .main-info{
+        opacity: 1;
+        color: $dark;
+        p, .location{
+            font-weight: 700;
+        }
+    }
+    &:hover{
+        &:before{
+            left: 25%;
+            opacity: 1;
+        }
+        .main-info{
+            opacity: 0;
+        }
+    }
+}
+
 %scrollbar{
     &::-webkit-scrollbar {
         background-color:$accent;
@@ -198,7 +232,7 @@ button,input[type="submit"]{
         width: 5px;
     }
     &::-webkit-scrollbar-track  {
-        background-color: $accent;
+        background-color: $primary;
         border-radius: 10px;
     }
     &::-webkit-scrollbar-thumb {

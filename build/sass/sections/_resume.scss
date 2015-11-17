@@ -14,21 +14,45 @@
             border-bottom: 4px $primary solid;
             background: $accent;
             color: $light;
-            padding: 20px;
             position: relative;
             &.front{
+                overflow: hidden;
+                background: rgba(0,0,0,.6);
+                &:before{
+                    content: ' ';
+                    display: block;
+                    @extend %middle;
+                    @extend %default-transition;
+                    left: 25%;
+                    width: 50%;
+                    height: 50%;
+                    z-index: 1;
+                    opacity: .3;
+                    background-size: contain;
+                    background-repeat:no-repeat;
+                    background-position:center;
+                }
                 .main-info{
                     @extend %absolute-middle;
+                    @extend %default-transition;
+                    text-shadow: .5px .5px $primary;
+                    z-index: 9;
                     text-transform: lowercase;
                     text-align: center;
+                    opacity: 1;
+                    color: $light;
+                    p, .location{
+                        font-weight: 700;
+                    }
                     p{
+                        @extend %default-transition;
                         font-size: 3em;
                         line-height: 28px;
                         letter-spacing: -1px;
                         margin-bottom: 10px;
                     }
                     .location{
-                        font-weight: 100;
+                        @extend %default-transition;
                     }
                 }
                 &:after{
@@ -43,16 +67,36 @@
                     opacity: .5;
                 }
                 &:hover{
-                    &:after{
+                    &:before{
+                        left: 25%;
                         opacity: 1;
+                    }
+                    .main-info{
+                        opacity: 0;
+                        p{
+                            font-size: 3.2em;
+                            line-height: 40px;
+                        }
+                        .location{
+                            font-size: 2.5em;
+                        }
+
+                    }
+                    &:after{
+                        @include size(26px);
                     }
                 }
             }
             &.back{
+                background: $primary;
+                padding: 40px;
                 overflow-y: scroll;
                 @extend %scrollbar;
                 h1{
                     margin-bottom: 15px;
+                    text-align: left;
+                    width: 100%;
+                    border-bottom: 1px $light solid;
                 }
                 .location{
                     text-align: right;
@@ -82,6 +126,27 @@
                 }
             }
         }
+        &.hhcc{
+            .front{
+                &:before{
+                    background-image: image-url('hh_logo.svg');
+                }
+            }
+        }
+        &.ga{
+            .front{
+                &:before{
+                    background-image: image-url('ga_logo.png');
+                }
+            }
+        }
+        &.cy{
+            .front{
+                &:before{
+                    background-image: image-url('cy_logo.png');
+                }
+            }
+        }
     }
 }
 
@@ -93,6 +158,26 @@
         .card{
             @include span-columns(6);
             @include omega(2n);
+            .content{
+                &.front{
+                    &:before{
+                        left: -25%;
+                        opacity: .3;
+                    }
+                    .main-info{
+                        .location{
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+            &.freelance{
+                .front{
+                    &:before{
+                        background-image: image-url('logo.svg');
+                    }
+                }
+            }
         }
     }
 }
