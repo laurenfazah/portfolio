@@ -46,12 +46,14 @@ $(function(){
     });
 
     $document.scroll(function() {
+        // bring scroll top button in view
         if ($document.scrollTop() >= 400) {
             $('.scroll-to.top').css('opacity', '.75');
         } else {
             $('.scroll-to.top').css('opacity', '0');
         }
 
+        // shrink nav on scrolldown
         if ($document.scrollTop() >= 100) {
             $('nav').removeClass('splash');
         } else {
@@ -59,6 +61,13 @@ $(function(){
         }
     });
 
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() === $(document).height()) {
+            $('.scroll-to.top').addClass('bottom');
+        } else {
+            $('.scroll-to.top').removeClass('bottom');
+        }
+    });
 
     /*//////////////////////////////////////
     //  intro section

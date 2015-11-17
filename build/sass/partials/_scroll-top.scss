@@ -1,15 +1,19 @@
 // scroll arrow fixed to page
 .scroll-to.top{
     position: fixed;
-    bottom: 100px;
+    bottom: 50px;
     right: 50px;
     background: $primary;
     opacity: 0;
     padding: 7px 10px;
     @extend %opacity-transition;
+    @include transition(all .3s ease-in-out);
     img{
         @include size(20px);
         @include transform(rotate(90deg));
+    }
+    &.bottom{
+        bottom: 100px;
     }
     display: none;
 }
