@@ -57,6 +57,7 @@ nav{
                 border: 1px $primary solid;
             }
             a{
+                @extend %default-transition;
                 text-decoration: none;
                 color: $light;
             }
@@ -106,6 +107,11 @@ nav{
             height: 100px;
             ul{
                 margin-top: 30px;
+                li{
+                    a{
+                        font-size: 18px;
+                    }
+                }
             }
             .burger{
                 img{
