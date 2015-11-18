@@ -20,7 +20,7 @@
         @extend %default-transition;
         display: table-cell;
         vertical-align: bottom;
-        height: 650px;
+        height: 400px;
         .info{
             width: 100%;
             min-height: 20px;
@@ -88,6 +88,9 @@
 
 @media all and(min-width:800px){
     .portfolio{
+        div.piece{
+            height: 650px;
+        }
         .freelance{
             div.piece{
                 &.roughwood{
