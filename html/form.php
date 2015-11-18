@@ -17,6 +17,6 @@
             'text'    => $message
         ));
     }
-    header( 'Location: portfolio.dev:8080/#contact' ) ;
+    header( 'Location: /#contact' ) ;
     session_destroy();
 ?>

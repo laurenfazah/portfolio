@@ -34,6 +34,7 @@ nav{
         z-index: -1;
         &.active{
             top: $header-height;
+            padding-top: 20px;
             li{
                 &:last-child{
                     margin-bottom: 20px;
@@ -43,22 +44,17 @@ nav{
         a{
             @extend %default-transition;
             text-decoration: none;
-            color: $light;
+            width: 100%;
             li{
-                line-height:40px;
+                padding: 10px 0;
+                color: $light;
                 width: 100px;
-                margin: 0 auto;
                 border-bottom: 1px $primary solid;
-                &:last-child{
+                margin: 0 auto;
+            }
+            &:last-child{
+                li{
                     border-bottom: none;
-                    margin-bottom: 0;
-                }
-                &.logo img{
-                    height: 40px;
-                    width: 40px;
-                    text-align: center;
-                    vertical-align: middle;
-                    border: 1px $primary solid;
                 }
             }
         }
