@@ -13,11 +13,15 @@ main {
 }
 
 #intro, #work, #portfolio, #skills, #contact{
-    padding-top: $header-height;
+    padding-top: 35px;
 }
 
 @media all and(min-width: 800px){
     body{
         padding-top: 0;
+    }
+
+    #intro, #work, #portfolio, #skills, #contact{
+        padding-top: $header-height;
     }
 }
