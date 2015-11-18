@@ -1,5 +1,5 @@
 // scroll arrow fixed to page
-.scroll-to.top{
+.scroll-top{
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -15,11 +15,11 @@
     &.bottom{
         bottom: 100px;
     }
-    display: none;
+    // display: none;
 }
 
 @media all and(min-width: 800px){
-    .scroll-to.top{
+    .scroll-top{
         display: block;
         cursor: pointer;
     }

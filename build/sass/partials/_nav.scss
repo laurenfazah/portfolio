@@ -1,5 +1,5 @@
 nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     background: $dark;
@@ -63,6 +63,7 @@ nav{
 
 @media all and(min-width: 800px) {
     nav{
+        position: fixed;
         height: $header-height;
         .burger{
             width: 20%;

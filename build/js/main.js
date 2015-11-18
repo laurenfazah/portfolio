@@ -43,7 +43,7 @@ $(function(){
         }, 500);
     });
 
-    $('.scroll-to.top').on('click', function(){
+    $('.scroll-top').on('click', function(){
         $('html, body').animate({
             scrollTop: 0
         }, 500);
@@ -52,9 +52,9 @@ $(function(){
     $document.scroll(function() {
         // bring scroll top button in view
         if ($document.scrollTop() >= 400) {
-            $('.scroll-to.top').css('opacity', '.75');
+            $('.scroll-top').css('opacity', '.75');
         } else {
-            $('.scroll-to.top').css('opacity', '0');
+            $('.scroll-top').css('opacity', '0');
         }
 
         // shrink nav on scrolldown
@@ -66,15 +66,15 @@ $(function(){
     });
 
     $window.scroll(function() {
-    // scroll top button not overlapping footer
-        if($window.width() >= 800){
-            if($window.scrollTop() + $window.height() === $document.height()) {
-                $('.scroll-to.top').addClass('bottom');
-            } else {
-                $('.scroll-to.top').removeClass('bottom');
-            }
+        // scroll top button not overlapping footer
+        if($window.scrollTop() + $window.height() === $document.height()) {
+            $('.scroll-top').addClass('bottom');
+        } else {
+            $('.scroll-top').removeClass('bottom');
+        }
 
-    //active scrolling
+        if($window.width() >= 800){
+            //active scrolling
             var cur_pos = $(this).scrollTop();
             sections.each(function() {
                 var top = $(this).offset().top - nav_height,
