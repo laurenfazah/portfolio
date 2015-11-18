@@ -1,13 +1,17 @@
 $(function(){
 
-    var $document = $(document);
+    var $document = $(document),
+        $window = $(window),
+        sections = $('section'),
+        nav = $('nav'),
+        nav_height = nav.outerHeight();
 
     /*//////////////////////////////////////
     //  burger open close
     //////////////////////////////////////*/
 
-    if($(window).width() < 800){
-        $('nav').on('click', function(){
+    if($window.width() < 800){
+        nav.on('click', function(){
             $('nav ul').toggleClass('active');
         });
     } else {
@@ -32,7 +36,7 @@ $(function(){
     //  page scrolling
     //////////////////////////////////////*/
 
-    $('.scroll-to > a').on('click', function(){
+    $('.scroll-to').on('click', function(){
         var scrollTo = $(this).attr('href');
         $('html, body').animate({
             scrollTop: parseInt($(scrollTo).offset().top)
@@ -55,24 +59,22 @@ $(function(){
 
         // shrink nav on scrolldown
         if ($document.scrollTop() >= 100) {
-            $('nav').removeClass('splash');
+            nav.removeClass('splash');
         } else {
-            $('nav').addClass('splash');
+            nav.addClass('splash');
         }
     });
 
-    //active scrolling
-    var sections = $('section'),
-        nav = $('nav'),
-        nav_height = nav.outerHeight();
-    $(window).scroll(function() {
-        if($(window).width() >= 800){
-            if($(window).scrollTop() + $(window).height() === $(document).height()) {
+    $window.scroll(function() {
+    // scroll top button not overlapping footer
+        if($window.width() >= 800){
+            if($window.scrollTop() + $window.height() === $document.height()) {
                 $('.scroll-to.top').addClass('bottom');
             } else {
                 $('.scroll-to.top').removeClass('bottom');
             }
 
+    //active scrolling
             var cur_pos = $(this).scrollTop();
             sections.each(function() {
                 var top = $(this).offset().top - nav_height,
@@ -83,7 +85,7 @@ $(function(){
                     sections.removeClass('active');
 
                     $(this).addClass('active');
-                    nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
+                    nav.find('a[href="#'+$(this).attr('id')+'"] > li').addClass('active');
                 }
             });
         }

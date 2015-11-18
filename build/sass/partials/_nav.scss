@@ -13,6 +13,7 @@ nav{
         background: $dark;
         width: 100%;
         overflow: hidden;
+        cursor: pointer;
         img{
             height: 40px;
             border: 1px $primary solid;
@@ -39,26 +40,26 @@ nav{
                 }
             }
         }
-        li{
-            line-height:40px;
-            width: 100px;
-            margin: 0 auto;
-            border-bottom: 1px $primary solid;
-            &:last-child{
-                border-bottom: none;
-                margin-bottom: 0;
-            }
-            &.logo img{
-                height: 40px;
-                width: 40px;
-                text-align: center;
-                vertical-align: middle;
-                border: 1px $primary solid;
-            }
-            a{
-                @extend %default-transition;
-                text-decoration: none;
-                color: $light;
+        a{
+            @extend %default-transition;
+            text-decoration: none;
+            color: $light;
+            li{
+                line-height:40px;
+                width: 100px;
+                margin: 0 auto;
+                border-bottom: 1px $primary solid;
+                &:last-child{
+                    border-bottom: none;
+                    margin-bottom: 0;
+                }
+                &.logo img{
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    vertical-align: middle;
+                    border: 1px $primary solid;
+                }
             }
         }
     }
@@ -89,18 +90,18 @@ nav{
             &.active{
                 top: 0;
             }
-            li{
-                width: 20%;
-                float: left;
-                border-bottom: none;
-                &:hover{
-                    border-bottom: 2px $primary solid;
-                }
-                &.active{
-                    border-bottom: 2px $primary solid;
-                }
-                a{
-                    text-align: right;
+            a{
+                // text-align: right;
+                li{
+                    width: 20%;
+                    float: left;
+                    border-bottom: none;
+                    &:hover{
+                        border-bottom: 2px $primary solid;
+                    }
+                    &.active{
+                        border-bottom: 2px $primary solid;
+                    }
                 }
             }
         }

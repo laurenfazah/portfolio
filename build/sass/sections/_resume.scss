@@ -18,6 +18,7 @@
             &.front{
                 overflow: hidden;
                 background: rgba(0,0,0,.6);
+                cursor: pointer;
                 &:before{
                     content: ' ';
                     display: block;
