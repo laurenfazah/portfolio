@@ -136,24 +136,6 @@ $(function(){
     /*//////////////////////////////////////
     //  contact form
     //////////////////////////////////////*/
-
-    // function mailOut(name, email, message){
-    //     var api_key = 'key-3e522d2966a5fbb738696e453ccde349';
-    //     var domain = 'mail.laurenfazah.com';
-    //     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
-
-    //     var data = {
-    //       from: name + ' <' + email + '>',
-    //       to: 'laurenfazah@gmail.com',
-    //       subject: 'Portfolio Message',
-    //       text: message
-    //     };
-
-    //     mailgun.messages().send(data, function (error, body) {
-    //       console.log(body);
-    //     });
-    // }
-
     function clearForm(){
         $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
     }
@@ -165,9 +147,20 @@ $(function(){
         var email = $('input[name="email"]').val();
         var message = $('textarea[name="message"]').val();
 
-        // mailOut(name, email, message);
+        var body = {
+            name: name,
+            email: email,
+            message: message
+        };
 
-        console.log(name, email, message);
+        $.ajax({
+            type: 'POST',
+            data: body,
+            url:'/mailgun',
+            success: function(data){
+                console.log(data);
+            }
+        });
 
         $('.email-thanks').text('thanks for the message!');
         setTimeout(clearForm, 250);
