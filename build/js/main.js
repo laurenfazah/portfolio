@@ -52,9 +52,9 @@ $(function(){
     $document.scroll(function() {
         // bring scroll top button in view
         if ($document.scrollTop() >= 400) {
-            $('.scroll-top').css('opacity', '.75');
+            $('.scroll-top').css({'opacity': '.75', 'cursor' : 'pointer'});
         } else {
-            $('.scroll-top').css('opacity', '0');
+            $('.scroll-top').css({'opacity': '0', 'cursor' : 'auto'});
         }
 
         // shrink nav on scrolldown
