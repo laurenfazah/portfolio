@@ -7,6 +7,8 @@
 
 // modules
 var express = require('express');
+var app = express();
+
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -16,29 +18,6 @@ var swig = require('swig');
 var http = require("http");
 var path = require("path");
 var cons = require('consolidate');
-var app = express();
-var static = require( 'node-static' );
-
-// config
-var file = new static.Server( './html', {
-    cache: 3600,
-    gzip: true
-} );
-
-// serve
-http.createServer( function ( request, response ) {
-    request.addListener( 'end', function () {
-        file.serve( request, response );
-    } ).resume();
-} ).listen( process.env.PORT || 5000 );
-
-
-
-/**
- * Module dependencies.
- */
- //expresszzzzz
-
 
 app.engine('html', swig.renderFile);
 app.set('views', __dirname + '/html/views');
