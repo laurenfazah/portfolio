@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "staging": "node ./bin/staging"
+    "start": "sudo node ./bin/www",
+    "staging": "sudo node ./bin/staging"
   },
   "dependencies": {
     "browserify": "^12.0.1",
