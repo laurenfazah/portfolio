@@ -158,7 +158,6 @@ $(function(){
             data: body,
             url:'/mailgun',
             success: function(data){
-                console.log(data);
             }
         });
 

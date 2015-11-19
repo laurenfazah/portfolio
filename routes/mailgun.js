@@ -5,7 +5,6 @@ var domain = 'mail.laurenfazah.com';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 router.post('/mailgun', function(req, res, next) {
-    console.log("req",req.body);
     var body = req.body;
 
         var data = {
