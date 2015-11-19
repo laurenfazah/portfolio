@@ -161,28 +161,13 @@ $(function(){
     $('form[name="contact_form"]').submit(function(e){
         e.preventDefault();
 
-        console.log("submit");
-
         var name = $('input[name="name"]').val();
         var email = $('input[name="email"]').val();
         var message = $('textarea[name="message"]').val();
 
-        $.ajax({
-            url: "https://docs.google.com/forms/d/1UIWw1tq3kGQ4aBOwfysMoL_2GAw4H-RFssizhdqg9VI/formResponse",
-            data: { "entry_1634697116": name,
-                "entry_815480734": email,
-                "entry_951513797": message
-            },
-            type: "POST",
-            dataType: "xml",
-            statusCode: {
-                0: function () {
-                    // success
-                },
-                200: function () {
-                }
-            }
-        });
+        // mailOut(name, email, message);
+
+        console.log(name, email, message);
 
         $('.email-thanks').text('thanks for the message!');
         setTimeout(clearForm, 250);

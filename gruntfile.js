@@ -121,14 +121,19 @@ module.exports = function(grunt) {
                 src: ['html/**/*.html','! node_modules/**/*.html']
         }
       },
-
-      copy: { 
+      nodemon: {
+        dev: {
+          script: 'bin/dev',
+          ignore: ['node_modules/**', 'html/js/**']
+        }
+      },
+      copy: {
         main:{
           files:[
             {
               expand: true,
               flatten: true,
-              src: ['build/js/**'], 
+              src: ['build/js/**'],
               dest: 'html/js/',
               filter:'isFile'},
           ],
@@ -173,6 +178,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-newer');
