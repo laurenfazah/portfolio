@@ -136,11 +136,54 @@ $(function(){
     /*//////////////////////////////////////
     //  contact form
     //////////////////////////////////////*/
+
+    // function mailOut(name, email, message){
+    //     var api_key = 'key-3e522d2966a5fbb738696e453ccde349';
+    //     var domain = 'mail.laurenfazah.com';
+    //     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+
+    //     var data = {
+    //       from: name + ' <' + email + '>',
+    //       to: 'laurenfazah@gmail.com',
+    //       subject: 'Portfolio Message',
+    //       text: message
+    //     };
+
+    //     mailgun.messages().send(data, function (error, body) {
+    //       console.log(body);
+    //     });
+    // }
+
     function clearForm(){
         $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
     }
 
-    $('form[name="contact_form"]').submit(function(){
+    $('form[name="contact_form"]').submit(function(e){
+        e.preventDefault();
+
+        console.log("submit");
+
+        var name = $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var message = $('textarea[name="message"]').val();
+
+        $.ajax({
+            url: "https://docs.google.com/forms/d/1UIWw1tq3kGQ4aBOwfysMoL_2GAw4H-RFssizhdqg9VI/formResponse",
+            data: { "entry_1634697116": name,
+                "entry_815480734": email,
+                "entry_951513797": message
+            },
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+                0: function () {
+                    // success
+                },
+                200: function () {
+                }
+            }
+        });
+
         $('.email-thanks').text('thanks for the message!');
         setTimeout(clearForm, 250);
     });

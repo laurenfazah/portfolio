@@ -6,6 +6,7 @@
     background: $primary;
     opacity: 0;
     padding: 7px 10px;
+    cursor: pointer;
     @extend %opacity-transition;
     @include transition(all .3s ease-in-out);
     img{
@@ -21,6 +22,5 @@
 @media all and(min-width: 800px){
     .scroll-top{
         display: block;
-        cursor: pointer;
     }
 }
