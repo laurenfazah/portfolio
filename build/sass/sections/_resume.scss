@@ -67,26 +67,6 @@
                     right: 10px;
                     opacity: .5;
                 }
-                &:hover{
-                    &:before{
-                        left: 25%;
-                        opacity: 1;
-                    }
-                    .main-info{
-                        opacity: 0;
-                        p{
-                            font-size: 3.2em;
-                            line-height: 40px;
-                        }
-                        .location{
-                            font-size: 2.5em;
-                        }
-
-                    }
-                    &:after{
-                        @include size(26px);
-                    }
-                }
             }
             &.back{
                 background: $primary;
@@ -164,6 +144,26 @@
                     &:before{
                         left: -25%;
                         opacity: .3;
+                    }
+                    &:hover{
+                        &:before{
+                            left: 25%;
+                            opacity: 1;
+                        }
+                        .main-info{
+                            opacity: 0;
+                            p{
+                                font-size: 3.2em;
+                                line-height: 40px;
+                            }
+                            .location{
+                                font-size: 2.5em;
+                            }
+
+                        }
+                        &:after{
+                            @include size(26px);
+                        }
                     }
                     .main-info{
                         .location{
