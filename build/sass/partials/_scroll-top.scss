@@ -1,12 +1,12 @@
 // scroll arrow fixed to page
 .scroll-top{
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 30px;
     background: $primary;
     opacity: 0;
     padding: 7px 10px;
-    display: block;
     @extend %opacity-transition;
     @include transition(all .3s ease-in-out);
     img{
@@ -15,5 +15,11 @@
     }
     &.bottom{
         bottom: 100px;
+    }
+}
+
+@media all and(min-width: 800px) {
+    .scroll-top{
+        display: block;
     }
 }

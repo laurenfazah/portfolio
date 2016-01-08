@@ -1,6 +1,5 @@
 nav{
-    position: absolute;
-    top: 0;
+    @include position(fixed, 0px auto auto 0px);
     width: 100%;
     background: $dark;
     color: $light;
@@ -34,11 +33,9 @@ nav{
         z-index: -1;
         &.active{
             top: $header-height;
-            padding-top: 20px;
-            li{
-                &:last-child{
-                    margin-bottom: 20px;
-                }
+            padding: 20px 0px;
+            #contact{
+                margin-bottom: 20px;
             }
         }
         a{
@@ -51,6 +48,7 @@ nav{
                 width: 100px;
                 border-bottom: 1px $primary solid;
                 margin: 0 auto;
+                line-height: 40px;
             }
             &:last-child{
                 li{
@@ -63,7 +61,6 @@ nav{
 
 @media all and(min-width: 800px) {
     nav{
-        position: fixed;
         height: $header-height;
         .burger{
             width: 20%;
@@ -88,11 +85,11 @@ nav{
                 top: 0;
             }
             a{
-                // text-align: right;
                 li{
                     width: 20%;
                     float: left;
                     border-bottom: none;
+                    line-height: 20px;
                     &:hover{
                         border-bottom: 2px $primary solid;
                     }

@@ -39,7 +39,7 @@ $(function(){
     $('.scroll-to').on('click', function(){
         var scrollTo = $(this).attr('href');
         $('html, body').animate({
-            scrollTop: parseInt($(scrollTo).offset().top)
+            scrollTop: parseInt($(scrollTo).offset().top+80)
         }, 500);
     });
 
