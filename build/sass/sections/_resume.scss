@@ -72,6 +72,7 @@
                 background: $primary;
                 padding: 40px;
                 overflow-y: scroll;
+                cursor: pointer;
                 @extend %scrollbar;
                 h1{
                     margin-bottom: 15px;
@@ -118,6 +119,13 @@
             .front{
                 &:before{
                     background-image: image-url('ga_logo.png');
+                }
+            }
+        }
+        &.gdi{
+            .front{
+                &:before{
+                    background-image: image-url('gdi-boston-logo.png');
                 }
             }
         }
