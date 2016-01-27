@@ -1,5 +1,6 @@
 @import 'partials/base';
-@import 'partials/slick';
+// @import 'partials/slick';
+@import 'partials/flip-cards';
 
 @import 'partials/body';
 @import 'partials/nav';
@@ -10,7 +11,8 @@
 
 @import 'sections/intro';
 @import 'sections/resume';
-@import 'sections/portfolio';
+// @import 'sections/portfolio-carousel';
+@import 'sections/portfolio-grid';
 @import 'sections/skills';
 @import 'sections/form';
 @import 'sections/error';

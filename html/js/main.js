@@ -44,19 +44,7 @@ $(function() {
         }
     }), $(".who").on("click", function() {
         $(".who p").toggleClass("active"), $(".who img").toggleClass("face-up");
-    }), $(".card").flip(), $(".slick-it").slick({
-        slide: ".slick-it li",
-        dots: !1,
-        arrows: !0,
-        infinite: !0
-    }), $(".portfolio-carousel").slick({
-        dots: !1,
-        infinite: !0,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrow: !0
-    }), $('form[name="contact_form"]').submit(function(e) {
+    }), $(".card").flip(), $(".piece").flip(), $('form[name="contact_form"]').submit(function(e) {
         e.preventDefault();
         var name = $('input[name="name"]').val(), email = $('input[name="email"]').val(), message = $('textarea[name="message"]').val(), body = {
             name: name,

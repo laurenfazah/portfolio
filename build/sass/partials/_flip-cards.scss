@@ -1,0 +1,86 @@
+ul.flip{
+    position: relative;
+    margin-bottom: 40px;
+}
+.card{
+    width:100%;
+    margin-bottom: 15px;
+    display: block;
+    height: 300px;
+    & > div{
+        margin-bottom: 15px;
+        border-bottom: 4px $primary solid;
+        background: $accent;
+        color: $light;
+        position: relative;
+        &.front{
+            overflow: hidden;
+            background: rgba(0,0,0,.6);
+            cursor: pointer;
+            &:before{
+                content: ' ';
+                display: block;
+                @extend %middle;
+                @extend %default-transition;
+                left: 25%;
+                width: 50%;
+                height: 50%;
+                z-index: 1;
+                opacity: .3;
+                background-size: contain;
+                background-repeat:no-repeat;
+                background-position:center;
+            }
+            &:after{
+                @extend %flip-info;
+            }
+        }
+        &.back{
+            background: $primary;
+            padding: 40px;
+            overflow-y: scroll;
+            cursor: pointer;
+            @extend %scrollbar;
+            &:after{
+                @extend %flip-close;
+            }
+            &:hover{
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media all and(min-width:800px){
+    ul.flip{
+        @include outer-container();
+    }
+    .card{
+        @include span-columns(6);
+        @include omega(2n);
+        & > div{
+            &.front{
+                &:before{
+                    left: -25%;
+                    opacity: .3;
+                }
+                &:hover{
+                    &:before{
+                        left: 25%;
+                        opacity: 1;
+                    }
+                    &:after{
+                        @include size(26px);
+                    }
+                }
+                .main-info{
+                    .location{
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+}

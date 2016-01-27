@@ -103,35 +103,25 @@ $(function(){
     });
 
     /*//////////////////////////////////////
-    //  resume section
-    //////////////////////////////////////*/
     // jquery flip()
+    //////////////////////////////////////*/
+    //
     $(".card").flip();
 
-
-    /*//////////////////////////////////////
-    //  fun facts carousel
-    //////////////////////////////////////*/
-
-    $('.slick-it').slick({
-        slide: '.slick-it li',
-        dots: false,
-        arrows: true,
-        infinite: true,
-    });
+    $(".piece").flip();
 
     /*//////////////////////////////////////
     //  portfolio carousel
     //////////////////////////////////////*/
 
-    $('.portfolio-carousel').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrow: true
-    });
+    // $('.portfolio-carousel').slick({
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrow: true
+    // });
 
     /*//////////////////////////////////////
     //  contact form
