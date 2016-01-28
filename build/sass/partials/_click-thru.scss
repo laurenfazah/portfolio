@@ -1,11 +1,29 @@
 .click-thru {
     position: relative;
-    &:before{
-        content: " ";
-        display: block;
-        @include triangle(10px, $light, right);
-        @include position(absolute, 10px auto auto -4px);
-        @include transform(translateX(-50%) translateY(-50%) scale(1.75,1));
-        @include transition(all .3s ease-in-out);
+    // &:before{
+    //     content: " ";
+    //     display: block;
+    //     @include triangle(10px, $light, right);
+    //     @include position(absolute, 10px auto auto -4px);
+    //     @include transform(translateX(-50%) translateY(-50%) scale(1.75,1));
+    //     @extend %default-transition;
+    // }
+    span{
+        @extend %default-transition;
+        @include position(relative, auto 0px auto auto);
+    }
+    &:hover{
+        span{
+            @include position(relative, auto -10px auto auto);
+        }
+    }
+    &.project{
+        width: 100%;
+        background: #b2ede1;
+        color: $primary;
+        font-size: 1.75em;
+        @include position(absolute, auto 0px 0px 0px);
+        text-align: center;
+        padding: 20px;
     }
 }
