@@ -1,8 +1,146 @@
 .portfolio{
+    h1{
+        // color: $light;
+    }
     background: $light;
+    overflow: auto;
+    .card{
+        margin-bottom: 15px;
+        & > div{
+            margin-bottom: 15px;
+            background: $primary;
+            color: $light;
+            position: relative;
+            &.front{
+                overflow: hidden;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center top;
+                &:before{
+                    @include size(100%);
+                    @include position(absolute, 0 auto auto 0);
+                    background: rgba(35,31,32,.5);
+                    opacity: 1;
+                }
+                &:after{
+                    content: url("../img/plus.svg");
+                    @extend %absolute-middle;
+                    @include size(30%);
+
+                }
+            }
+            &.back{
+                padding: 10%;
+                .title{
+                    color: $light;
+                    font-size: 1.5em;
+                    text-decoration: none;
+                }
+                .title, .role{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &.roughwood{
+            .front{
+                background-image: image-url('projects/mobile/roughwood-mobile.jpg');
+            }
+        }
+        &.intuit{
+            .front{
+                background: $dark;
+                opacity: .5;
+                background-image: image-url('');
+            }
+        }
+        &.storymaker{
+            .front{
+                background-image: image-url('projects/mobile/storymaker-story.jpg');
+            }
+        }
+        &.selfless{
+            .front{
+                background-image: image-url('projects/mobile/selfless.jpg');
+            }
+        }
+        &.tic-tac-toe{
+            .front{
+                background-image: image-url('projects/mobile/ttt.jpg');
+            }
+        }
+        &.tvnext{
+            .front{
+                background-image: image-url('projects/mobile/tvnext-companion.jpg');
+            }
+        }
+        &.www{
+            .front{
+                background-image: image-url('projects/mobile/wholeworldwater.jpg');
+            }
+        }
+        &.brandfeed{
+            .front{
+                background-image: image-url('');
+            }
+        }
+        &.training-portal{
+            .front{
+                background-image: image-url('projects/mobile/training-dashboard.jpg');
+            }
+        }
+        &.onebostonday{
+            .front{
+                background-image: image-url('projects/mobile/onebostonday-award.jpg');
+            }
+        }
+        &.hhcc-app{
+            .front{
+                background-image: image-url('projects/mobile/hhcc_app-desktop.jpg');
+            }
+        }
+        &.passion{
+            .front{
+                background-image: image-url('projects/mobile/passion-poll_article.jpg');
+            }
+        }
+        &.rfid{
+            .front{
+                background-image: image-url('projects/arduino.png');
+            }
+        }
+        &.events{
+            .front{
+                background-image: image-url('projects/events.png');
+            }
+        }
+        &.brandfeed{
+            .front{
+                background-image: image-url('projects/brandfeed.png');
+            }
+        }
+    }
 }
 
 @media all and(min-width:800px){
     .portfolio{
+        .card{
+            @include span-columns(4);
+            @include omega(3n);
+            margin-bottom: 15px;
+            & > div{
+                margin-bottom: 15px;
+                background: $primary;
+                color: $light;
+                position: relative;
+                &.front{
+                    &:hover{
+                        &:after{
+                            @include size(40%);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

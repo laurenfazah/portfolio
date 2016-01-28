@@ -1,6 +1,7 @@
 .resume{
     background: $light;
     .card{
+        margin-bottom: 15px;
         .content{
             &.front{
                 .main-info{
@@ -29,8 +30,12 @@
                 &:after{
                     @extend %flip-info;
                 }
+                &:before{
+                    left: 25%;
+                }
             }
             &.back{
+                padding: 40px;
                 h1{
                     margin-bottom: 15px;
                     text-align: left;
@@ -83,6 +88,8 @@
 @media all and(min-width:800px){
     .resume{
         .card{
+            @include span-columns(6);
+            @include omega(2n);
             .content{
                 &.front{
                     &:hover{
@@ -95,11 +102,17 @@
                             .location{
                                 font-size: 2.5em;
                             }
-
+                        }
+                        &:before{
+                            left: 25%;
+                            opacity: 1;
                         }
                         &:after{
-                            @include size(26px);
+                            @include size(30px);
                         }
+                    }
+                    &:before{
+                        left: -25%;
                     }
                     .main-info{
                         .location{

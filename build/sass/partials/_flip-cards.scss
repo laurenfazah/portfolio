@@ -4,12 +4,10 @@ ul.flip{
 }
 .card{
     width:100%;
-    margin-bottom: 15px;
     display: block;
     height: 300px;
     & > div{
         margin-bottom: 15px;
-        border-bottom: 4px $primary solid;
         background: $accent;
         color: $light;
         position: relative;
@@ -22,7 +20,6 @@ ul.flip{
                 display: block;
                 @extend %middle;
                 @extend %default-transition;
-                left: 25%;
                 width: 50%;
                 height: 50%;
                 z-index: 1;
@@ -37,7 +34,6 @@ ul.flip{
         }
         &.back{
             background: $primary;
-            padding: 40px;
             overflow-y: scroll;
             cursor: pointer;
             @extend %scrollbar;
@@ -58,22 +54,11 @@ ul.flip{
         @include outer-container();
     }
     .card{
-        @include span-columns(6);
-        @include omega(2n);
+        // include omega
         & > div{
             &.front{
                 &:before{
-                    left: -25%;
                     opacity: .3;
-                }
-                &:hover{
-                    &:before{
-                        left: 25%;
-                        opacity: 1;
-                    }
-                    &:after{
-                        @include size(26px);
-                    }
                 }
                 .main-info{
                     .location{
