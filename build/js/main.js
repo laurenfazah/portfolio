@@ -174,11 +174,11 @@ $(function(){
     /*//////////////////////////////////////
     //  link out
     //////////////////////////////////////*/
-    $('.click-thru').each(function(){
-        var linkContent = $(this).html();
-        linkContent += '<img class="link-icon" src="img/link_out.svg"\/>';
-        $(this).html(linkContent);
-    });
+    // $('.click-thru').each(function(){
+    //     var linkContent = $(this).html();
+    //     linkContent += '<img class="link-icon" src="img/link_out.svg"\/>';
+    //     $(this).html(linkContent);
+    // });
 
 
 });
