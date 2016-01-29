@@ -139,7 +139,7 @@
                     &:hover{
                         background-position: center;
                         &:after{
-                            @include size(40%);
+                            // @include size(40%);
                         }
                     }
                 }
