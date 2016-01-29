@@ -17,6 +17,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center top;
+                transition: all 1s ease-out;
                 &:before{
                     @include size(100%);
                     @include position(absolute, 0 auto auto 0);
@@ -80,9 +81,9 @@
                 background-image: image-url('projects/mobile/wholeworldwater.jpg');
             }
         }
-        &.brandfeed{
+        &.bdot{
             .front{
-                background-image: image-url('');
+                background-image: image-url('projects/bdotadot5.png');
             }
         }
         &.training-portal{
@@ -92,7 +93,7 @@
         }
         &.onebostonday{
             .front{
-                background-image: image-url('projects/mobile/onebostonday-award.jpg');
+                background-image: image-url('projects/obd-large.png');
             }
         }
         &.hhcc-app{
@@ -136,6 +137,7 @@
                 position: relative;
                 &.front{
                     &:hover{
+                        background-position: center;
                         &:after{
                             @include size(40%);
                         }
