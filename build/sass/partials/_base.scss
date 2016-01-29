@@ -231,11 +231,11 @@ button,input[type="submit"]{
     @include size(32px);
     @extend %default-transition;
     display: block;
-    z-index: 9;
-    position: fixed;
+    z-index: 0;
+    position: absolute;
     top: 6px;
     right: 6px;
-    opacity: .5;
+    opacity: .3;
 }
 
 body,html{

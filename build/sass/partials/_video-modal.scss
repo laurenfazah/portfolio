@@ -1,0 +1,89 @@
+.video-modal-container{
+    @include position(fixed, 0px 0px 0px 0px);
+    @include opacity(0);
+    background-color:$dark;
+    z-index:9;
+    @extend %default-transition;
+    .video-modal{
+        display:block;
+        width:100%;
+        max-width:800px;
+        @extend %absolute-middle;
+        @include transition(all .7s ease-in-out);
+        @include transform(translate3d(0,0,0) translateX(-50%) translateY(-50%));
+        top:60%;
+        background-color:rgba($light,0.2);
+        &:after{
+            content:" ";
+            display:block;
+            padding-top:56.25%;
+        }
+        iframe{
+            width:100%;
+            height:100%;
+            padding:5px;
+            @include position(absolute, 0px auto auto 0px);
+        }
+    }
+    button{
+        display:block;
+        @extend %hide-text;
+        padding:0px;
+        border:none;
+        background-color:transparent;
+        @include position(absolute, -60px 15px auto auto);
+        @include size(45px);
+        &:before,&:after{
+            content:" ";
+            display:block;
+            height:100%;
+            width:5px;
+            background-color:$light;
+            @include position(absolute, 50% auto auto 50%);
+            @extend %default-transition;
+        }
+        &:before{ @include transform(translateX(-50%) translateY(-50%) rotate(45deg));}
+        &:after{ @include transform(translateX(-50%) translateY(-50%) rotate(-45deg));}
+    }
+}
+
+.video-modal-container{
+    button{
+        @extend %default-transition;
+        &:hover{
+            background-color:$light;
+            &:before,&:after{
+                height:80%;
+                background-color:$dark;
+            }
+        }
+    }
+}
+
+@media all and(min-height:800px){
+    .video-modal-container{
+        .video-modal{
+            max-width:1000px;
+        }
+        button{
+            right:0px;
+        }
+    }
+}
+
+@media all and(min-height:1000px){
+    .video-modal-container .video-modal{
+        max-width:1400px;
+    }
+}
+
+.modal-active{
+    overflow:hidden;
+    padding-right:13px;
+    .video-modal-container{
+        @include opacity(1);
+    }
+    .video-modal{
+        top:50%;
+    }
+}

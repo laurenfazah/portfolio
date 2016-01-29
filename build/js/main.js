@@ -180,5 +180,20 @@ $(function(){
     //     $(this).html(linkContent);
     // });
 
+    // $('div.front').each(function(){
+    //     if ($(this).css('z-index', 1)){
+    //         console.log("yes");
+    //     }
+    // });
+
+    // $('div.back').each(function(){
+    //     $(this).css('display', 'none');
+    //     if ($(this).css('z-index', 1)) {
+    //         $(this).css('display', 'block');
+    //         console.log("closed");
+    //     } else {
+    //         $(this).css('display', 'none');
+    //     }
+    // });
 
 });

@@ -52,6 +52,9 @@
                         color: $light;
                     }
                 }
+                &:after{
+                    @extend %flip-close;
+                }
             }
         }
         &.hhcc{

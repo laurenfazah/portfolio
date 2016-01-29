@@ -1,7 +1,4 @@
 .portfolio{
-    h1{
-        // color: $light;
-    }
     background: $light;
     overflow: auto;
     .card{
@@ -139,6 +136,18 @@
                         &:after{
                             // @include size(40%);
                         }
+                    }
+                }
+                &.back{
+                    &:after{
+                        content: url("../img/close_x.svg");
+                        @include size(32px);
+                        display: block;
+                        z-index: 0;
+                        position: absolute;
+                        top: 6px;
+                        right: 6px;
+                        opacity: .3;
                     }
                 }
             }

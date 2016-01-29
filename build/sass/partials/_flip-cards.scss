@@ -23,7 +23,7 @@ ul.flip{
                 width: 50%;
                 height: 50%;
                 z-index: 1;
-                opacity: .3;
+                opacity: 1;
                 background-size: contain;
                 background-repeat:no-repeat;
                 background-position:center;
@@ -36,10 +36,8 @@ ul.flip{
             background: $primary;
             overflow-y: scroll;
             cursor: pointer;
+            opacity: 1;
             @extend %scrollbar;
-            &:after{
-                @extend %flip-close;
-            }
             &:hover{
                 &:after{
                     opacity: 1;
