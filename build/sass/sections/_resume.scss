@@ -2,61 +2,6 @@
     background: $light;
     .card{
         margin-bottom: 15px;
-        .content{
-            &.front{
-                .main-info{
-                    @extend %absolute-middle;
-                    @extend %default-transition;
-                    text-shadow: .5px .5px $primary;
-                    z-index: 9;
-                    text-transform: lowercase;
-                    text-align: center;
-                    opacity: 1;
-                    color: $light;
-                    p, .location{
-                        font-weight: 700;
-                    }
-                    p{
-                        @extend %default-transition;
-                        font-size: 3em;
-                        line-height: 28px;
-                        letter-spacing: -1px;
-                        margin-bottom: 10px;
-                    }
-                    .location{
-                        @extend %default-transition;
-                    }
-                }
-                &:after{
-                    @extend %flip-info;
-                }
-                &:before{
-                    left: 25%;
-                }
-            }
-            &.back{
-                padding: 40px;
-                h1{
-                    margin-bottom: 15px;
-                    text-align: left;
-                    width: 100%;
-                    border-bottom: 1px $light solid;
-                }
-                .location{
-                    text-align: right;
-                    margin-bottom: 15px;
-                }
-                .job{
-                    margin-bottom: 15px;
-                    a{
-                        color: $light;
-                    }
-                }
-                &:after{
-                    @extend %flip-close;
-                }
-            }
-        }
         &.hhcc{
             .front{
                 &:before{
@@ -82,6 +27,68 @@
             .front{
                 &:before{
                     background-image: image-url('cy_logo.png');
+                }
+            }
+        }
+        .content{
+            &.front{
+                .main-info{
+                    @extend %absolute-middle;
+                    @extend %default-transition;
+                    // text-shadow: .5px .5px $primary;
+                    z-index: 9;
+                    text-transform: lowercase;
+                    text-align: center;
+                    opacity: 1;
+                    color: $light;
+                    p, .location{
+                        font-weight: 700;
+                    }
+                    p{
+                        @extend %default-transition;
+                        font-size: 3em;
+                        line-height: 28px;
+                        letter-spacing: -1px;
+                        margin-bottom: 10px;
+                    }
+                    .location{
+                        @extend %default-transition;
+                    }
+                }
+                &:after{
+                    @extend %flip-info;
+                }
+                &:before{
+                    @include size(100%);
+                    @include position(absolute, 0 auto auto 0);
+                    background-color: rgba(35,31,32,.7s);
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: 1;
+                    opacity: .5;
+                }
+            }
+            &.back{
+                padding: 40px;
+                h1{
+                    margin-bottom: 15px;
+                    text-align: left;
+                    width: 100%;
+                    border-bottom: 1px $light solid;
+                }
+                .location{
+                    text-align: right;
+                    margin-bottom: 15px;
+                }
+                .job{
+                    margin-bottom: 15px;
+                    a{
+                        color: $light;
+                    }
+                }
+                &:after{
+                    @extend %flip-close;
                 }
             }
         }
@@ -116,6 +123,9 @@
                     }
                     &:before{
                         left: -25%;
+                        background-color: rgba(0,0,0,0);
+                        @include size(50%);
+                        background-size: 75%;
                     }
                     .main-info{
                         .location{
