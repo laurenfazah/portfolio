@@ -51,9 +51,7 @@
         }
         &.intuit{
             .front{
-                background: $dark;
-                opacity: .5;
-                background-image: image-url('');
+                background-image: image-url('projects/mobile/intuit-qsp-2015.jpg');
             }
         }
         &.storymaker{
@@ -83,7 +81,7 @@
         }
         &.bdot{
             .front{
-                background-image: image-url('projects/bdotadot5.png');
+                background-image: image-url('projects/mobile/bdotadot5.jpg');
             }
         }
         &.training-portal{
@@ -93,7 +91,7 @@
         }
         &.onebostonday{
             .front{
-                background-image: image-url('projects/obd-large.png');
+                background-image: image-url('projects/mobile/obd-large.jpg');
             }
         }
         &.hhcc-app{
@@ -113,7 +111,7 @@
         }
         &.events{
             .front{
-                background-image: image-url('projects/events.png');
+                background-image: image-url('projects/mobile/hhcc-events.jpg');
             }
         }
         &.brandfeed{
@@ -137,7 +135,7 @@
                 position: relative;
                 &.front{
                     &:hover{
-                        background-position: center;
+                        background-position: center bottom;
                         &:after{
                             // @include size(40%);
                         }
