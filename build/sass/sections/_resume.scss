@@ -95,6 +95,12 @@
     }
 }
 
+@media all and(min-width:500px){
+    .resume .card .content.front:before{
+        background-size: 30%;
+    }
+}
+
 @media all and(min-width:800px){
     .resume{
         .card{
@@ -125,7 +131,7 @@
                         left: -25%;
                         background-color: rgba(0,0,0,0);
                         @include size(50%);
-                        background-size: 75%;
+                        background-size: 50%;
                     }
                     .main-info{
                         .location{
