@@ -52,6 +52,7 @@ ul.flip{
 @media all and(min-width:800px){
     ul.flip{
         @include outer-container();
+        max-width: 80%;
     }
     .card{
         // include omega
