@@ -30,6 +30,13 @@
                 }
             }
         }
+        &.freelance{
+            .front{
+                &:before{
+                    background-image: image-url('logo.svg');
+                }
+            }
+        }
         .content{
             &.front{
                 .main-info{
@@ -137,13 +144,6 @@
                         .location{
                             font-weight: 200;
                         }
-                    }
-                }
-            }
-            &.freelance{
-                .front{
-                    &:before{
-                        background-image: image-url('logo.svg');
                     }
                 }
             }
