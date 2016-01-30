@@ -19,10 +19,11 @@
             padding: 5%;
             pointer-events:none;
             img{
+                @include filter(grayscale(50%));
                 width: 100%;
                 max-width: 300px;
                 @include transition(all .1s ease-in-out);
-                border: 3px $light solid;
+                // border: 3px $light solid;
             }
             p{
                 font-size: 12px;
