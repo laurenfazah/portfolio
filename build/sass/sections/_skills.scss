@@ -14,15 +14,7 @@
                 background: darken($primary, 20%);
                 @include transition(all .2s ease-in-out);
                 color: $primary;
-                p{
-
-                }
-                &.high{
-                    width: 100%;
-                }
-                &.med{
-                    display: none;
-                }
+                width: 100%;
                 &.low{
                     display: none;
                 }
