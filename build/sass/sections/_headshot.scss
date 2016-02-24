@@ -1,0 +1,37 @@
+section.headshot{
+    padding: 0px;
+    position: relative;
+    &:before{
+        content: "";
+        display: block;
+        padding-top: 115%;
+        background: image-url('headshot.jpg');
+        background-size: cover;
+        background-position: center;
+        @extend %default-transition;
+    }
+    .message{
+        @include size(100%);
+        @include position(absolute, 0px auto auto 0px);
+        background-color: rgba($dark, .4);
+        h1{
+            @extend %absolute-middle;
+            top: 60%;
+            font-weight: 100;
+            color: $light;
+        }
+    }
+}
+
+@media all and(min-width: 800px){
+    section.headshot{
+        &:before{
+            padding-top: 66%;
+        }
+        .message{
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+}
