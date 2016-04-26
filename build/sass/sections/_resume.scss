@@ -2,40 +2,25 @@
     background: $light;
     .card{
         margin-bottom: 15px;
-        &.hhcc{
-            .front{
-                &:before{
-                    background-image: image-url('hh_logo.svg');
-                }
-            }
+        &.hhcc .front{
+          &:before{
+            background-image: image-url('hh_logo.svg');
+          }
         }
-        &.ga{
-            .front{
-                &:before{
-                    background-image: image-url('ga_logo.png');
-                }
-            }
+        &.ga .front{
+          &:before{
+            background-image: image-url('ga_logo.png');
+          }
         }
-        &.gdi{
-            .front{
-                &:before{
-                    background-image: image-url('gdi-boston-logo.png');
-                }
-            }
+        &.gdi .front{
+          &:before{
+            background-image: image-url('gdi-boston-logo.png');
+          }
         }
-        &.cy{
-            .front{
-                &:before{
-                    background-image: image-url('cy_logo.png');
-                }
-            }
-        }
-        &.freelance{
-            .front{
-                &:before{
-                    background-image: image-url('logo.svg');
-                }
-            }
+        &.freelance .front{
+          &:before{
+            background-image: image-url('logo.svg');
+          }
         }
         .content{
             &.front{
