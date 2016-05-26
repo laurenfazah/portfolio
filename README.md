@@ -1,3 +1,3 @@
 # Portfolio
 
-* built with node and express
+Built with Express.js.

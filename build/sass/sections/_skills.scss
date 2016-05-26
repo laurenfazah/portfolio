@@ -35,6 +35,7 @@
                 li{
                     background: $dark;
                     opacity: .4;
+                    padding: 10px;
                     &:hover{
                         opacity: 1;
                         p{
@@ -43,17 +44,14 @@
                     }
                     &.high{
                         width: 90%;
-                        padding: 10px;
                     }
                     &.med{
                         width: 70%;
                         display: block;
-                        padding: 8px;
                     }
                     &.low{
                         width: 50%;
                         display: block;
-                        padding: 6px;
                     }
                 }
             }
