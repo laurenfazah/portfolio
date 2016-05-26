@@ -116,7 +116,7 @@
                             opacity: 1;
                         }
                         &:after{
-                            @include size(30px);
+                            opacity: .8;
                         }
                     }
                     &:before{
