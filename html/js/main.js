@@ -1,66 +1,199 @@
-$(function() {
-    function clearForm() {
-        $('input[name="name"], input[name="email"], textarea[name="message"]').val("");
+$(function(){
+
+    var $document = $(document),
+        $window = $(window),
+        sections = $('section'),
+        nav = $('nav'),
+        nav_height = nav.outerHeight();
+
+    /*//////////////////////////////////////
+    //  burger open close
+    //////////////////////////////////////*/
+
+    if($window.width() < 800){
+        nav.on('click', function(){
+            $('nav ul').toggleClass('active');
+        });
+    } else {
+        $('nav .burger').on('click', function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        });
     }
-    var $document = $(document), $window = $(window), sections = $("section"), nav = $("nav"), nav_height = nav.outerHeight();
-    $window.width() < 800 ? nav.on("click", function() {
-        $("nav ul").toggleClass("active");
-    }) : $("nav .burger").on("click", function() {
-        $("html, body").animate({
+
+    var closeMenu = function(){
+        if ($('nav ul').hasClass('active')){
+            $('nav ul').removeClass('active');
+        }
+    };
+
+    $('header, main, footer').on('click', function(){
+        closeMenu();
+    });
+
+    /*//////////////////////////////////////
+    //  page scrolling
+    //////////////////////////////////////*/
+
+    $('.scroll-to').on('click', function(){
+        var scrollTo = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: parseInt($(scrollTo).offset().top-55)
+        }, 500);
+    });
+
+    $('.scroll-top').on('click', function(){
+        $('html, body').animate({
             scrollTop: 0
         }, 500);
     });
-    var closeMenu = function() {
-        $("nav ul").hasClass("active") && $("nav ul").removeClass("active");
-    };
-    $("header, main, footer").on("click", function() {
-        closeMenu();
-    }), $(".scroll-to").on("click", function() {
-        var scrollTo = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: parseInt($(scrollTo).offset().top - 60)
-        }, 500);
-    }), $(".scroll-top").on("click", function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 500);
-    }), $document.scroll(function() {
-        $document.scrollTop() >= 400 ? $(".scroll-top").css({
-            opacity: ".75",
-            cursor: "pointer"
-        }) : $(".scroll-top").css({
-            opacity: "0",
-            cursor: "auto"
-        }), $document.scrollTop() >= 100 ? nav.removeClass("splash") : nav.addClass("splash");
-    }), $window.scroll(function() {
-        if ($window.scrollTop() + $window.height() === $document.height() ? $(".scroll-top").addClass("bottom") : $(".scroll-top").removeClass("bottom"), 
-        $window.width() >= 800) {
+
+    $document.scroll(function() {
+        // bring scroll top button in view
+        if ($document.scrollTop() >= 400) {
+            $('.scroll-top').css({'opacity': '.75', 'cursor' : 'pointer'});
+        } else {
+            $('.scroll-top').css({'opacity': '0', 'cursor' : 'auto'});
+        }
+
+        // shrink nav on scrolldown
+        if ($document.scrollTop() >= 100) {
+            nav.removeClass('splash');
+        } else {
+            nav.addClass('splash');
+        }
+    });
+
+    $window.scroll(function() {
+        // scroll top button not overlapping footer
+        if($window.scrollTop() + $window.height() === $document.height()) {
+            $('.scroll-top').addClass('bottom');
+        } else {
+            $('.scroll-top').removeClass('bottom');
+        }
+
+        if($window.width() >= 800){
+            //active scrolling
             var cur_pos = $(this).scrollTop();
             sections.each(function() {
-                var top = $(this).offset().top - nav_height, bottom = top + $(this).outerHeight();
-                cur_pos >= top && bottom >= cur_pos && (nav.find("li").removeClass("active"), sections.removeClass("active"), 
-                $(this).addClass("active"), nav.find('a[href="#' + $(this).attr("id") + '"] > li').addClass("active"));
+                var top = $(this).offset().top - nav_height,
+                    bottom = top + $(this).outerHeight();
+
+                if (cur_pos >= top && cur_pos <= bottom) {
+                    nav.find('li').removeClass('active');
+                    sections.removeClass('active');
+
+                    $(this).addClass('active');
+                    nav.find('a[href="#'+$(this).attr('id')+'"] > li').addClass('active');
+                }
             });
         }
-    }), $(".who").on("click", function() {
-        $(".who p").toggleClass("active"), $(".who img").toggleClass("face-up");
-    }), $(".card").flip(), $(".piece").flip(), $('form[name="contact_form"]').submit(function(e) {
+    });
+
+    /*//////////////////////////////////////
+    //  intro section
+    //////////////////////////////////////*/
+
+    $('.who').on('click', function(){
+        // open who am i
+        $('.who p').toggleClass('active');
+        // flip arrow
+        $('.who img').toggleClass('face-up');
+    });
+
+    /*//////////////////////////////////////
+    // jquery flip()
+    //////////////////////////////////////*/
+    //
+    $(".card").flip();
+
+    $(".piece").flip();
+
+    /*//////////////////////////////////////
+    //  portfolio carousel
+    //////////////////////////////////////*/
+
+    // $('.portfolio-carousel').slick({
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrow: true
+    // });
+
+    /*//////////////////////////////////////
+    //  contact form
+    //////////////////////////////////////*/
+    function clearForm(){
+        $('input[name="name"], input[name="email"], textarea[name="message"]').val('');
+    }
+
+    $('form[name="contact_form"]').submit(function(e){
         e.preventDefault();
-        var name = $('input[name="name"]').val(), email = $('input[name="email"]').val(), message = $('textarea[name="message"]').val(), body = {
+
+        var name = $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var message = $('textarea[name="message"]').val();
+
+        var body = {
             name: name,
             email: email,
             message: message
         };
+
         $.ajax({
-            type: "POST",
+            type: 'POST',
             data: body,
-            url: "/mailgun",
-            success: function(data) {}
-        }), $(".email-thanks").text("thanks for the message!"), setTimeout(clearForm, 250);
-    }), $("form > .contact-input").keyup(function() {
-        var empty = !1;
-        $("form > .contact-input").each(function() {
-            "" === $(this).val() && (empty = !0);
-        }), empty ? $(".submit").removeClass("ready") : $(".submit").addClass("ready");
+            url:'/mailgun',
+            success: function(data){
+            }
+        });
+
+        $('.email-thanks').text('thanks for the message!');
+        setTimeout(clearForm, 250);
     });
+
+    // submit button control on form
+    $('form > .contact-input').keyup(function() {
+        var empty = false;
+        $('form > .contact-input').each(function() {
+            if ($(this).val() === '') {
+                empty = true;
+            }
+        });
+        if (empty) {
+            $('.submit').removeClass('ready');
+        } else {
+            $('.submit').addClass('ready');
+        }
+    });
+
+
+    /*//////////////////////////////////////
+    //  link out
+    //////////////////////////////////////*/
+    // $('.click-thru').each(function(){
+    //     var linkContent = $(this).html();
+    //     linkContent += '<img class="link-icon" src="img/link_out.svg"\/>';
+    //     $(this).html(linkContent);
+    // });
+
+    // $('div.front').each(function(){
+    //     if ($(this).css('z-index', 1)){
+    //         console.log("yes");
+    //     }
+    // });
+
+    // $('div.back').each(function(){
+    //     $(this).css('display', 'none');
+    //     if ($(this).css('z-index', 1)) {
+    //         $(this).css('display', 'block');
+    //         console.log("closed");
+    //     } else {
+    //         $(this).css('display', 'none');
+    //     }
+    // });
+
 });
