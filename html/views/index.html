@@ -17,23 +17,14 @@
 
             {% include 'resume.html' %}
 
+            {% include 'news.html' %}
+
             {% include 'portfolio-grid.html' %}
 
             {% include 'skills.html' %}
 
-            <section id="contact" class="contact">
-
-                <form method="post" name="contact_form" action="">
-                    <h1>want to chat?</h1>
-                    <input type="text" name="name" placeholder="name" class="contact-input" required>
-                    <input type="email" name="email" placeholder="email" class="contact-input" required>
-                    <textarea name="message" cols="30" rows="10" placeholder="drop a message..." class="contact-input" required></textarea>
-                    <input type="submit" value="send off" name="submit" class="submit">
-                    <h1 class="email-thanks"></h1>
-                </form>
-
-            </section>
-
+            {% include 'contact.html' %}
+            
         </main>
 
 {% endblock %}

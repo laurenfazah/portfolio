@@ -29,7 +29,7 @@ ul.flip{
                 background-position:center;
             }
             &:after{
-                @extend %flip-info;
+                // @extend %flip-info;
             }
         }
         &.back{

@@ -3,6 +3,7 @@
     overflow: auto;
     .card{
         margin-bottom: 15px;
+        height: 400px;
         & > div{
             margin-bottom: 15px;
             background: $primary;
@@ -27,8 +28,10 @@
                 &:after{
                     content: url("../img/plus.svg");
                     @extend %absolute-middle;
+                    @extend %default-transition;
                     @include size(30%);
-
+                    z-index: 1;
+                    opacity: .5;
                 }
             }
             &.back{
@@ -47,6 +50,11 @@
         &.roughwood{
             .front{
                 background-image: image-url('projects/mobile/roughwood-mobile.jpg');
+            }
+        }
+        &.destress{
+            .front{
+                background-image: image-url('projects/destress.png');
             }
         }
         &.intuit{
@@ -138,20 +146,21 @@
                         background-position: center bottom;
                         &:after{
                             // @include size(40%);
-                            opacity:1;
+                            z-index: 1;
+                            opacity: 1;
                         }
                     }
                 }
                 &.back{
                     &:after{
-                        content: url("../img/close_x.svg");
-                        @include size(32px);
-                        display: block;
-                        z-index: 0;
-                        position: absolute;
-                        top: 6px;
-                        right: 6px;
-                        opacity: .3;
+                        // content: url("../img/close_x.svg");
+                        // @include size(32px);
+                        // display: block;
+                        // z-index: 0;
+                        // position: absolute;
+                        // top: 6px;
+                        // right: 6px;
+                        // opacity: .3;
                     }
                 }
             }
