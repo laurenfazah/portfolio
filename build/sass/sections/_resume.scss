@@ -2,6 +2,11 @@
     background: $light;
     .card{
         margin-bottom: 15px;
+        &.turing .front{
+          &:before{
+            background-image: image-url('https://www.turing.io/sites/default/files/pictures/logo-small.png');
+          }
+        }
         &.hhcc .front{
           &:before{
             background-image: image-url('hh_logo.svg');
