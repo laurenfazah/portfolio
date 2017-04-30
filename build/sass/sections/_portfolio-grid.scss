@@ -67,6 +67,11 @@
                 background-image: image-url('projects/mobile/storymaker-story.jpg');
             }
         }
+        &.snaps{
+            .front{
+                background-image: image-url('projects/hh_snaps.png');
+            }
+        }
         &.selfless{
             .front{
                 background-image: image-url('projects/mobile/selfless.jpg');
