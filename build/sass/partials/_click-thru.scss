@@ -19,7 +19,7 @@
     }
     &.project{
         width: 100%;
-        background: #b2ede1;
+        background: rgba($light, .8);
         color: $primary;
         font-size: 1.75em;
         @include position(absolute, auto 0px 0px 0px);
