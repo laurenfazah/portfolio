@@ -1,13 +1,5 @@
 .click-thru {
     position: relative;
-    // &:before{
-    //     content: " ";
-    //     display: block;
-    //     @include triangle(10px, $light, right);
-    //     @include position(absolute, 10px auto auto -4px);
-    //     @include transform(translateX(-50%) translateY(-50%) scale(1.75,1));
-    //     @extend %default-transition;
-    // }
     span{
         @extend %default-transition;
         @include position(relative, auto 0px auto auto);
