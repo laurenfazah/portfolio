@@ -42,8 +42,5 @@
     "grunt-nodemon": "^0.4.0",
     "grunt-svgmin": "~0.3.0",
     "nodemon": "^1.18.4"
-  },
-  "engines": {
-    "node": "0.11.x"
   }
 }

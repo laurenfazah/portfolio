@@ -44,6 +44,7 @@
                     opacity: 1;
                     color: $light;
                     p, .location{
+                        display: none;
                         font-weight: 700;
                     }
                     p{
@@ -136,6 +137,9 @@
                         background-size: 50%;
                     }
                     .main-info{
+                        p, .location{
+                            display: block;
+                        }
                         .location{
                             font-weight: 200;
                         }

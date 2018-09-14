@@ -16,9 +16,10 @@ section.headshot{
         background-color: rgba($dark, .4);
         h1{
             @extend %absolute-middle;
-            top: 60%;
-            font-weight: 100;
             color: $light;
+            font-weight: 200;
+            line-height: 1.2;
+            top: 60%;
         }
     }
 }
