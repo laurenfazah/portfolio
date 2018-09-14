@@ -2,9 +2,14 @@
     background: $light;
     .card{
         margin-bottom: 15px;
+        &.bigcartel .front{
+          &:before{
+            background-image: image-url('bc_logo.png');
+          }
+        }
         &.turing .front{
           &:before{
-            background-image: image-url('https://www.turing.io/sites/default/files/pictures/logo-small.png');
+            background-image: image-url('turing_logo.png');
           }
         }
         &.hhcc .front{
